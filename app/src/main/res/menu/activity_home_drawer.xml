@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_menu_category"
+            android:title="@string/menu_menu" />
+       <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/ic_menu_restaurant"
+            android:title="@string/menu_restaurant" />
+
+        <item
+            android:id="@+id/nav_boulangerie"
+            android:icon="@drawable/ic_menu_boulangerie"
+            android:title="@string/menu_boulangerie" />
+
+        <item
+            android:id="@+id/nav_explorer"
+            android:icon="@drawable/ic_menu_explorer"
+            android:title="@string/menu_explorer" />
+    </group>
+
+    <!--
+    <item android:title="@string/a_propos">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_menu_account"
+                android:title="@string/menu_account" />
+
+        </menu>
+    </item>
+    -->
+    <item android:title="@string/application">
+        <menu>
+            <item
+                android:id="@+id/nav_licence"
+                android:icon="@drawable/ic_licence"
+                android:title="@string/k_merd_lices" />
+        </menu>
+    </item>
+</menu>

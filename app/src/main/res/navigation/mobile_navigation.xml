@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="cm.togettech.togethouse.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="cm.togettech.togethouse.ui.menu.MenuFragment"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/nav_restaurant"
+        android:name="cm.togettech.togethouse.ui.restaurant.RestaurantFragment"
+        android:label="@string/menu_restaurant"
+        tools:layout="@layout/fragment_restaurant" />
+
+    <fragment
+        android:id="@+id/nav_boulangerie"
+        android:name="cm.togettech.togethouse.ui.boulangerie.BoulangerieFragment"
+        android:label="@string/menu_boulangerie"
+        tools:layout="@layout/fragment_boulangerie" />
+
+    <fragment
+        android:id="@+id/nav_food_detail"
+        android:name="cm.togettech.togethouse.ui.fooddetail.FoodDetailFragment"
+        android:label="@string/menu_food_detail"
+        tools:layout="@layout/fragment_food_detail" />
+
+    <fragment
+        android:id="@+id/nav_food_list"
+        android:name="cm.togettech.togethouse.ui.foodlist.FoodListFragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/fragment_food_list" />
+
+    <fragment
+        android:id="@+id/nav_restaurant_list"
+        android:name="cm.togettech.togethouse.ui.restaurant.RestaurantFragment"
+        android:label="@string/menu_restaurant_list"
+        tools:layout="@layout/fragment_restaurant" />
+
+    <fragment
+        android:id="@+id/nav_restaurant_detail"
+        android:name="cm.togettech.togethouse.ui.restaurant.detail.RestaurantDetailFragment"
+        android:label="@string/menu_restaurant_detail"
+        tools:layout="@layout/fragment_restaurant_detail" />
+
+    <fragment
+        android:id="@+id/nav_boulangerie_list"
+        android:name="cm.togettech.togethouse.ui.boulangerie.BoulangerieFragment"
+        android:label="@string/menu_boulangerie_list"
+        tools:layout="@layout/fragment_boulangerie" />
+
+    <fragment
+        android:id="@+id/nav_boulangerie_detail"
+        android:name="cm.togettech.togethouse.ui.boulangerie.detail.BoulangerieDetailFragment"
+        android:label="@string/menu_boulangerie_detail"
+        tools:layout="@layout/fragment_boulangerie_detail" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="cm.togettech.togethouse.ui.account.AccountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_licence"
+        android:name="cm.togettech.togethouse.ui.licence.LicenceFragment"
+        android:label="@string/k_merd_lices"
+        tools:layout="@layout/fragment_licence" />
+
+
+
+
+</navigation>

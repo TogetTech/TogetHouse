@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a07e5c5a-dc47-4f26-998d-3db6bf56c262" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/MapsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/account/AcountViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/comments/CommentViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/licence/LicenceViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_favorite_shadow_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_magnify.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/white_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/release/res/values/google_maps_api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/togettech/kmerdelices/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/cm/togettech/togethouse/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/list_of_locations.geojson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Adapter/MyBestDealsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MyBestDealsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Adapter/MyBoulangerieAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MyBoulangerieAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Adapter/MyCartAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MyCartAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Adapter/MyCategoriesAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MyCategoriesAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Adapter/MyCommentAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MyCommentAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Adapter/MyFoodListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MyFoodListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Adapter/MyMenuRestaurantAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MyMenuRestaurantAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Adapter/MyPopularCategoriesAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MyPopularCategoriesAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Adapter/MyRestaurantAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MyRestaurantAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Callback/IBestDealCallbackListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/IBestDealCallbackListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Callback/IBoulangerieCallbackListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/IBoulangerieCallbackListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Callback/ICategoryCallbackListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/ICategoryCallbackListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Callback/ICommentCallbackListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/ICommentCallbackListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Callback/IMenuRestaurantCallbackListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/IMenuRestaurantCallbackListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Callback/IPopularCallbackListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/IPopularCallbackListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Callback/IRecyclerClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/IRecyclerClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Callback/IRestaurantCallbackListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/IRestaurantCallbackListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Carousel/CarouselActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Carousel/CarouselActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Carousel/CarouselAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Carousel/CarouselAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Common/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Common/SpacesItemDecoration.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Common/SpacesItemDecoration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Database/CartDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Database/CartDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Database/CartDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Database/CartDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Database/CartDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Database/CartDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Database/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Database/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Database/LocalCartDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Database/LocalCartDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/EventBus/BoulangerieDetailClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/BoulangerieDetailClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/EventBus/BoulangerieItemClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/BoulangerieItemClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/EventBus/CategoryClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/CategoryClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/EventBus/CounterCartEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/CounterCartEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/EventBus/FoodItemClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/FoodItemClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/EventBus/HideFabCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/HideFabCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/EventBus/RestaurantDetailClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/RestaurantDetailClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/EventBus/RestaurantItemClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/RestaurantItemClick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/EventBus/UpdateItemInCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/UpdateItemInCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ExploreActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/HomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/LaunchActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/LaunchActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/AddonModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/AddonModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/BestDealModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/BestDealModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/BoulangerieModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/BoulangerieModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/CategoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/CategoryModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/CommentModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/CommentModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/FoodModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/FoodModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/MenuRestaurantModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/MenuRestaurantModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/PopularCategoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/PopularCategoryModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/RestaurantModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/RestaurantModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/SizeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/SizeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/Model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/mapbox/adapter/LocationRecyclerViewAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/mapbox/model/IndividualLocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/mapbox/util/LinearLayoutManagerWithSmoothScroller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/account/AccountFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/account/AccountFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/account/AcountViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/boulangerie/BoulangerieFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/boulangerie/BoulangerieFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/boulangerie/BoulangerieViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/boulangerie/BoulangerieViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/boulangerie/detail/BoulangerieDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/boulangerie/detail/BoulangerieDetailFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/boulangerie/detail/BoulangerieDetailViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/boulangerie/detail/BoulangerieDetailViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/cart/CartFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/cart/CartFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/cart/CartViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/cart/CartViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/comments/CommentFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/comments/CommentFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/comments/CommentViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/fooddetail/FoodDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/fooddetail/FoodDetailFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/fooddetail/FoodDetailViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/fooddetail/FoodDetailViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/foodlist/FoodListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/foodlist/FoodListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/foodlist/FoodListViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/foodlist/FoodListViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/home/HomeViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/home/HomeViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/licence/LicenceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/licence/LicenceFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/licence/LicenceViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/menu/MenuFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/menu/MenuFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/menu/MenuViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/menu/MenuViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/restaurant/RestaurantFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/restaurant/RestaurantFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/restaurant/RestaurantViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/restaurant/RestaurantViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/restaurant/detail/RestaurantDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/restaurant/detail/RestaurantDetailFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/togettech/kmerdelices/ui/restaurant/detail/RestaurantDetailViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/restaurant/detail/RestaurantDetailViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_explore.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_food_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_food_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_restaurant_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_restaurant_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_food_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_food_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/togettech/kmerdelices/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/cm/togettech/togethouse/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kmerdelices" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kmerdelices" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kmerdelices" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="resourceFile" />
+        <option value="Interface" />
+        <option value="valueResourceFile" />
+        <option value="Class" />
+        <option value="Enum" />
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Bureau/release/my-release-key.jks" />
+    <option name="KEY_ALIAS" value="my-alias" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZIn40ZqU8L72F4J0Y0BMOy3RMW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="app" />
+    <property name="BundleExportedModule" value="app" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.BuildVariants" value="release" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.1092118" />
+    <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-1757831898">
+      <recent name="com.togettech.kmerdelices.Mapbox" />
+      <recent name="com.togettech.kmerdelices" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.togettech.kmerdelices.Carousel" />
+      <recent name="com.togettech.kmerdelices" />
+      <recent name="com.example.kmerdelices" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/font" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/font" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/anim" />
+    </key>
+    <key name="android.template.-1324500649">
+      <recent name="com.togettech.kmerdelices" />
+      <recent name="com.togettech.kmerdelices.map" />
+      <recent name="com.togettech" />
+    </key>
+    <key name="android.template.-1602164123">
+      <recent name="com.togettech.kmerdelices.ui" />
+    </key>
+    <key name="android.template.-1102015121">
+      <recent name="com.togettech.kmerdelices" />
+    </key>
+    <key name="android.template.1123482693">
+      <recent name="com.togettech.kmerdelices" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="TogetHouse.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kmerdelices [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="kmerdelices:app [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.kmerdelices [signingReport]" />
+        <item itemvalue="Gradle.kmerdelices:app [signingReport]" />
+        <item itemvalue="Gradle.kmerdelices:app [signingReport]" />
+        <item itemvalue="Gradle.kmerdelices:app [signingReport]" />
+        <item itemvalue="Gradle.kmerdelices:app [signingReport]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a07e5c5a-dc47-4f26-998d-3db6bf56c262" name="Default Changelist" comment="" />
+      <created>1584535280259</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584535280259</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="497" y="203" width="800" height="673" key="#Notifications" timestamp="1601124088940">
+      <screen x="0" y="28" width="1920" height="988" />
+    </state>
+    <state x="497" y="203" key="#Notifications/0.28.1920.988@0.28.1920.988" timestamp="1601124088940" />
+    <state x="2355" y="186" width="800" height="673" key="#Notifications/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1598488431956" />
+    <state x="599" y="325" width="712" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598498870691">
+      <screen x="0" y="28" width="1920" height="989" />
+    </state>
+    <state x="599" y="325" width="712" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598498870691" />
+    <state x="741" y="260" width="374" height="573" key="#com.intellij.ide.util.MemberChooser" timestamp="1602018610356">
+      <screen x="0" y="32" width="1920" height="978" />
+    </state>
+    <state x="741" y="258" key="#com.intellij.ide.util.MemberChooser/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601278451160" />
+    <state x="2568" y="244" width="374" height="558" key="#com.intellij.ide.util.MemberChooser/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1598087060735" />
+    <state x="741" y="258" width="374" height="558" key="#com.intellij.ide.util.MemberChooser/0.28.1920.989@0.28.1920.989" timestamp="1600485028808" />
+    <state x="741" y="260" width="374" height="573" key="#com.intellij.ide.util.MemberChooser/0.32.1920.978@0.32.1920.978" timestamp="1602018610356" />
+    <state x="655" y="287" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601986788621">
+      <screen x="0" y="32" width="1920" height="978" />
+    </state>
+    <state x="655" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.988@0.28.1920.988" timestamp="1601413766797" />
+    <state x="2493" y="274" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1598087500587" />
+    <state x="655" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.989@0.28.1920.989" timestamp="1598176121008" />
+    <state x="655" y="287" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.32.1920.978@0.32.1920.978" timestamp="1601986788621" />
+    <state x="2493" y="274" width="524" height="498" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1598085158943">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state x="2493" y="274" width="524" height="498" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1598085158943" />
+    <state x="509" y="298" width="824" height="480" key="AndroidCreateResourceFileDialog" timestamp="1603664368211">
+      <screen x="0" y="32" width="3286" height="986" />
+    </state>
+    <state x="483" y="295" width="824" height="480" key="AndroidCreateResourceFileDialog/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598497233699" />
+    <state x="2343" y="283" width="824" height="480" key="AndroidCreateResourceFileDialog/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1596216525289" />
+    <state x="483" y="295" key="AndroidCreateResourceFileDialog/0.28.1920.989@0.28.1920.989" timestamp="1596474293365" />
+    <state x="509" y="295" key="AndroidCreateResourceFileDialog/0.28.3286.988@0.28.3286.988" timestamp="1600985138855" />
+    <state x="509" y="298" key="AndroidCreateResourceFileDialog/0.32.3286.986@0.32.3286.986" timestamp="1603664368211" />
+    <state x="765" y="367" width="357" height="307" key="AndroidCreateXmlResourceDialog" timestamp="1603471921392">
+      <screen x="0" y="32" width="1920" height="986" />
+    </state>
+    <state x="765" y="364" width="338" height="315" key="AndroidCreateXmlResourceDialog/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598497040521" />
+    <state x="2589" y="357" width="332" height="327" key="AndroidCreateXmlResourceDialog/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597855433170" />
+    <state x="765" y="364" width="332" height="323" key="AndroidCreateXmlResourceDialog/0.28.1920.989@0.28.1920.989" timestamp="1598174900376" />
+    <state x="1309" y="364" key="AndroidCreateXmlResourceDialog/0.28.3286.988@0.28.3286.988" timestamp="1600983692137" />
+    <state x="765" y="367" width="357" height="307" key="AndroidCreateXmlResourceDialog/0.32.1920.986@0.32.1920.986" timestamp="1603471921392" />
+    <state x="712" y="298" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603479345503">
+      <screen x="0" y="32" width="1920" height="986" />
+    </state>
+    <state x="712" y="295" key="FileChooserDialogImpl/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1600812926916" />
+    <state x="712" y="295" width="424" height="491" key="FileChooserDialogImpl/0.28.1920.988@0.28.1920.988" timestamp="1601409016965" />
+    <state x="712" y="295" width="424" height="480" key="FileChooserDialogImpl/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1595637752174" />
+    <state x="2543" y="283" width="424" height="480" key="FileChooserDialogImpl/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1598080332167" />
+    <state x="712" y="295" width="424" height="480" key="FileChooserDialogImpl/0.28.1920.989@0.28.1920.989" timestamp="1600602010127" />
+    <state x="712" y="296" width="424" height="490" key="FileChooserDialogImpl/0.32.1920.978@0.32.1920.978" timestamp="1602888481995" />
+    <state x="712" y="298" width="424" height="491" key="FileChooserDialogImpl/0.32.1920.986@0.32.1920.986" timestamp="1603479345503" />
+    <state width="1874" height="442" key="GridCell.Tab.0.bottom" timestamp="1603468714884">
+      <screen x="0" y="32" width="1920" height="986" />
+    </state>
+    <state width="1874" height="302" key="GridCell.Tab.0.bottom/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601279392935" />
+    <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.28.1920.988@0.28.1920.988" timestamp="1601130355815" />
+    <state width="1634" height="269" key="GridCell.Tab.0.bottom/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597730768498" />
+    <state width="1874" height="248" key="GridCell.Tab.0.bottom/0.28.1920.989@0.28.1920.989" timestamp="1600474110352" />
+    <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.32.1920.978@0.32.1920.978" timestamp="1602007370463" />
+    <state width="1874" height="442" key="GridCell.Tab.0.bottom/0.32.1920.986@0.32.1920.986" timestamp="1603468714884" />
+    <state width="1874" height="442" key="GridCell.Tab.0.center" timestamp="1603468714884">
+      <screen x="0" y="32" width="1920" height="986" />
+    </state>
+    <state width="1874" height="302" key="GridCell.Tab.0.center/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601279392935" />
+    <state width="1874" height="244" key="GridCell.Tab.0.center/0.28.1920.988@0.28.1920.988" timestamp="1601130355814" />
+    <state width="1634" height="269" key="GridCell.Tab.0.center/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597730768498" />
+    <state width="1874" height="248" key="GridCell.Tab.0.center/0.28.1920.989@0.28.1920.989" timestamp="1600474110352" />
+    <state width="1874" height="244" key="GridCell.Tab.0.center/0.32.1920.978@0.32.1920.978" timestamp="1602007370463" />
+    <state width="1874" height="442" key="GridCell.Tab.0.center/0.32.1920.986@0.32.1920.986" timestamp="1603468714884" />
+    <state width="1874" height="442" key="GridCell.Tab.0.left" timestamp="1603468714883">
+      <screen x="0" y="32" width="1920" height="986" />
+    </state>
+    <state width="1874" height="302" key="GridCell.Tab.0.left/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601279392935" />
+    <state width="1874" height="244" key="GridCell.Tab.0.left/0.28.1920.988@0.28.1920.988" timestamp="1601130355814" />
+    <state width="1634" height="269" key="GridCell.Tab.0.left/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597730768498" />
+    <state width="1874" height="248" key="GridCell.Tab.0.left/0.28.1920.989@0.28.1920.989" timestamp="1600474110351" />
+    <state width="1874" height="244" key="GridCell.Tab.0.left/0.32.1920.978@0.32.1920.978" timestamp="1602007370463" />
+    <state width="1874" height="442" key="GridCell.Tab.0.left/0.32.1920.986@0.32.1920.986" timestamp="1603468714883" />
+    <state width="1874" height="442" key="GridCell.Tab.0.right" timestamp="1603468714884">
+      <screen x="0" y="32" width="1920" height="986" />
+    </state>
+    <state width="1874" height="302" key="GridCell.Tab.0.right/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601279392935" />
+    <state width="1874" height="244" key="GridCell.Tab.0.right/0.28.1920.988@0.28.1920.988" timestamp="1601130355815" />
+    <state width="1634" height="269" key="GridCell.Tab.0.right/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597730768498" />
+    <state width="1874" height="248" key="GridCell.Tab.0.right/0.28.1920.989@0.28.1920.989" timestamp="1600474110352" />
+    <state width="1874" height="244" key="GridCell.Tab.0.right/0.32.1920.978@0.32.1920.978" timestamp="1602007370463" />
+    <state width="1874" height="442" key="GridCell.Tab.0.right/0.32.1920.986@0.32.1920.986" timestamp="1603468714884" />
+    <state x="768" y="157" width="1022" height="737" key="SettingsEditor" timestamp="1600988705348">
+      <screen x="0" y="28" width="3286" height="988" />
+    </state>
+    <state x="449" y="112" key="SettingsEditor/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1597539300322" />
+    <state x="2313" y="137" key="SettingsEditor/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597860566979" />
+    <state x="449" y="157" key="SettingsEditor/0.28.1920.989@0.28.1920.989" timestamp="1600601741913" />
+    <state x="768" y="157" width="1022" height="737" key="SettingsEditor/0.28.3286.988@0.28.3286.988" timestamp="1600988705348" />
+    <state x="732" y="305" width="446" height="436" key="chooseDestDirectoryDialog" timestamp="1603663533190">
+      <screen x="0" y="32" width="1920" height="986" />
+    </state>
+    <state x="732" y="302" width="446" height="447" key="chooseDestDirectoryDialog/0.28.1920.988@0.28.1920.988" timestamp="1601409479021" />
+    <state x="732" y="302" width="446" height="436" key="chooseDestDirectoryDialog/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598495863756" />
+    <state x="732" y="303" width="446" height="436" key="chooseDestDirectoryDialog/0.32.1920.978@0.32.1920.978" timestamp="1601987179062" />
+    <state x="732" y="305" key="chooseDestDirectoryDialog/0.32.1920.986@0.32.1920.986" timestamp="1603663533190" />
+    <state x="616" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1602979347295">
+      <screen x="0" y="32" width="1920" height="986" />
+    </state>
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1600812828308" />
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.28.1920.988@0.28.1920.988" timestamp="1601368626594" />
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598823829058" />
+    <state x="2459" y="342" key="com.intellij.ide.util.TipDialog/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597868723694" />
+    <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.28.1920.989@0.28.1920.989" timestamp="1600601991640" />
+    <state x="616" y="351" key="com.intellij.ide.util.TipDialog/0.32.1920.978@0.32.1920.978" timestamp="1602888423279" />
+    <state x="616" y="354" key="com.intellij.ide.util.TipDialog/0.32.1920.986@0.32.1920.986" timestamp="1602979347295" />
+    <state x="683" y="235" width="543" height="568" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1601986856789">
+      <screen x="0" y="32" width="1920" height="978" />
+    </state>
+    <state x="683" y="235" width="543" height="568" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.32.1920.978@0.32.1920.978" timestamp="1601986856789" />
+    <state x="984" y="28" width="932" height="989" key="dock-window-1" timestamp="1598174901715">
+      <screen x="0" y="28" width="1920" height="989" />
+    </state>
+    <state x="695" y="28" width="1130" height="978" maximized="true" key="dock-window-1/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1598084942487" />
+    <state x="984" y="28" width="932" height="989" key="dock-window-1/0.28.1920.989@0.28.1920.989" timestamp="1598174901715" />
+    <state x="638" y="35" width="1115" height="978" maximized="true" key="dock-window-2" timestamp="1596217709624">
+      <screen x="0" y="28" width="1920" height="989" />
+    </state>
+    <state x="638" y="35" width="1115" height="978" maximized="true" key="dock-window-2/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1596217709624" />
+    <state x="1920" y="24" width="752" height="1020" key="dock-window-3" timestamp="1596222692669">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state x="1920" y="24" width="752" height="1020" key="dock-window-3/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1596222692669" />
+    <state x="588" y="58" width="792" height="978" maximized="true" key="dock-window-4" timestamp="1596224916088">
+      <screen x="0" y="28" width="1920" height="989" />
+    </state>
+    <state x="588" y="58" width="792" height="978" maximized="true" key="dock-window-4/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1596224916088" />
+    <state x="471" y="108" width="978" height="828" key="find.popup" timestamp="1597826162220">
+      <screen x="0" y="28" width="1920" height="989" />
+    </state>
+    <state x="2332" y="85" width="855" height="879" key="find.popup/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1596215313917" />
+    <state x="471" y="108" width="978" height="828" key="find.popup/0.28.1920.989@0.28.1920.989" timestamp="1597826162220" />
+    <state x="576" y="254" key="run.anything.popup" timestamp="1597827985456">
+      <screen x="0" y="28" width="1920" height="989" />
+    </state>
+    <state x="2424" y="240" key="run.anything.popup/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1596913215311" />
+    <state x="576" y="254" key="run.anything.popup/0.28.1920.989@0.28.1920.989" timestamp="1597827985456" />
+  </component>
+</project>
