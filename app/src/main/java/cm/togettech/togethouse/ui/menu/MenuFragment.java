@@ -20,11 +20,12 @@ import cm.togettech.togethouse.Adapter.MyCategoriesAdapter;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Common.SpacesItemDecoration;
 
-import com.togettech.kmerdelices.R;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 import dmax.dialog.SpotsDialog;
 
 public class MenuFragment extends Fragment {

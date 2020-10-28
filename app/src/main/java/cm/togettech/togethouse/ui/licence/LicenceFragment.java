@@ -8,7 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.togettech.kmerdelices.R;
+import cm.togettech.togethouse.R;
+
 
 public class LicenceFragment extends Fragment {
 

@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 import cm.togettech.togethouse.HomeActivity;
 
 import cm.togettech.togethouse.LoginActivity;
-import com.togettech.kmerdelices.R;
+import cm.togettech.togethouse.R;
 
 
 public class CarouselActivity extends AppCompatActivity {

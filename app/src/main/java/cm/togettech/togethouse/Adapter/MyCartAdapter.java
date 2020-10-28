@@ -14,7 +14,6 @@ import com.bumptech.glide.Glide;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import cm.togettech.togethouse.Database.CartItem;
 import cm.togettech.togethouse.EventBus.UpdateItemInCart;
-import com.togettech.kmerdelices.R;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -23,6 +22,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.MyViewHolder> {
 

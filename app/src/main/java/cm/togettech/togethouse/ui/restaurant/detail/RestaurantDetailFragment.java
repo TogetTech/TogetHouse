@@ -38,7 +38,6 @@ import com.google.firebase.database.ValueEventListener;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.CommentModel;
 import cm.togettech.togethouse.Model.RestaurantModel;
-import com.togettech.kmerdelices.R;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -47,6 +46,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 import dmax.dialog.SpotsDialog;
 
 

@@ -12,13 +12,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import cm.togettech.togethouse.Model.CommentModel;
-import com.togettech.kmerdelices.R;
-
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 public class MyCommentAdapter extends RecyclerView.Adapter<MyCommentAdapter.MyViewHolder> {
 

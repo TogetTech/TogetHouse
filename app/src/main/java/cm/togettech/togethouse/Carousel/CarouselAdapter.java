@@ -11,7 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-import com.togettech.kmerdelices.R;
+import cm.togettech.togethouse.R;
+
 
 public class CarouselAdapter extends PagerAdapter {
 

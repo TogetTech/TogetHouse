@@ -17,11 +17,11 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.BoulangerieModel;
-import com.togettech.kmerdelices.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 import dmax.dialog.SpotsDialog;
 
 public class BoulangerieDetailFragment extends Fragment {

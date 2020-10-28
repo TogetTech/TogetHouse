@@ -21,7 +21,6 @@ import cm.togettech.togethouse.Database.LocalCartDataSource;
 import cm.togettech.togethouse.EventBus.CounterCartEvent;
 import cm.togettech.togethouse.EventBus.FoodItemClick;
 import cm.togettech.togethouse.Model.FoodModel;
-import com.togettech.kmerdelices.R;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -30,6 +29,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 import io.reactivex.SingleObserver;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;

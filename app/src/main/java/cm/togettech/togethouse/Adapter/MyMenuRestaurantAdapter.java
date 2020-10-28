@@ -15,13 +15,14 @@ import cm.togettech.togethouse.Callback.IRecyclerClickListener;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.MenuRestaurantModel;
 
-import com.togettech.kmerdelices.R;
+
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 public class MyMenuRestaurantAdapter extends RecyclerView.Adapter<MyMenuRestaurantAdapter.MyViewHolder> {
 

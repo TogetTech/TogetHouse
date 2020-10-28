@@ -16,7 +16,6 @@ import cm.togettech.togethouse.Callback.IRecyclerClickListener;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.EventBus.RestaurantDetailClick;
 import cm.togettech.togethouse.Model.RestaurantModel;
-import com.togettech.kmerdelices.R;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -25,6 +24,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 public class MyRestaurantAdapter extends RecyclerView.Adapter<MyRestaurantAdapter.MyViewHolder> {
 

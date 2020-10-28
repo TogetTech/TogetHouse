@@ -15,7 +15,7 @@ import cm.togettech.togethouse.Callback.IRecyclerClickListener;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.EventBus.BoulangerieDetailClick;
 import cm.togettech.togethouse.Model.BoulangerieModel;
-import com.togettech.kmerdelices.R;
+
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -24,6 +24,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 public class MyBoulangerieAdapter extends RecyclerView.Adapter<MyBoulangerieAdapter.MyViewHolder> {
     Context context;

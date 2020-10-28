@@ -1,6 +1,5 @@
 package cm.togettech.togethouse.ui.account;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,14 +14,14 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import cm.togettech.togethouse.LaunchActivity;
 
-import com.togettech.kmerdelices.R;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 
 public class AccountFragment extends Fragment {
@@ -74,7 +73,7 @@ public class AccountFragment extends Fragment {
 
     private void logout() {
         firebaseAuth.signOut();
-        startActivity(new Intent(getContext(), LaunchActivity.class));
+        //startActivity(new Intent(getContext(), .class));
         getActivity().finish();
     }
 }

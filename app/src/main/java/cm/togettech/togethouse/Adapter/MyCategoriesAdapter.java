@@ -15,7 +15,6 @@ import cm.togettech.togethouse.Callback.IRecyclerClickListener;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.EventBus.CategoryClick;
 import cm.togettech.togethouse.Model.CategoryModel;
-import com.togettech.kmerdelices.R;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -24,6 +23,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 public class MyCategoriesAdapter extends RecyclerView.Adapter<MyCategoriesAdapter.MyViewHolder>{
 

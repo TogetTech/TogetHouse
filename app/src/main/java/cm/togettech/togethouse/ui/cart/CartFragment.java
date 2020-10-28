@@ -26,7 +26,6 @@ import cm.togettech.togethouse.Database.CartItem;
 import cm.togettech.togethouse.Database.LocalCartDataSource;
 import cm.togettech.togethouse.EventBus.HideFabCart;
 import cm.togettech.togethouse.EventBus.UpdateItemInCart;
-import com.togettech.kmerdelices.R;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -37,6 +36,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 import io.reactivex.SingleObserver;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;

@@ -24,7 +24,6 @@ import cm.togettech.togethouse.Adapter.MyCommentAdapter;
 import cm.togettech.togethouse.Callback.ICommentCallbackListener;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.CommentModel;
-import com.togettech.kmerdelices.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +31,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 import dmax.dialog.SpotsDialog;
 
 public class CommentFragment extends BottomSheetDialogFragment implements ICommentCallbackListener {

@@ -47,7 +47,8 @@ import cm.togettech.togethouse.Model.CommentModel;
 import cm.togettech.togethouse.Model.FoodModel;
 import cm.togettech.togethouse.Model.SizeModel;
 
-import com.togettech.kmerdelices.R;
+
+import cm.togettech.togethouse.R;
 import cm.togettech.togethouse.ui.comments.CommentFragment;
 
 import java.util.ArrayList;

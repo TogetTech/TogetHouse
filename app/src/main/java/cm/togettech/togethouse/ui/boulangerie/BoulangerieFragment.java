@@ -15,11 +15,11 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 
 import cm.togettech.togethouse.Adapter.MyBoulangerieAdapter;
-import com.togettech.kmerdelices.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 public class BoulangerieFragment extends Fragment {
 

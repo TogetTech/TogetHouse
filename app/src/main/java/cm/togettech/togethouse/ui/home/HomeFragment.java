@@ -19,11 +19,12 @@ import com.asksira.loopingviewpager.LoopingViewPager;
 import cm.togettech.togethouse.Adapter.MyBestDealsAdapter;
 import cm.togettech.togethouse.Adapter.MyPopularCategoriesAdapter;
 
-import com.togettech.kmerdelices.R;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 public class HomeFragment extends Fragment {
 

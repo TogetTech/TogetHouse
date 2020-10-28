@@ -20,13 +20,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import cm.togettech.togethouse.Adapter.MyFoodListAdapter;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.FoodModel;
-import com.togettech.kmerdelices.R;
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 @SuppressWarnings("ALL")
 public class FoodListFragment extends Fragment {

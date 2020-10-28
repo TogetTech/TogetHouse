@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "56739364590",
+    "firebase_url": "https://hotel-5204f.firebaseio.com",
+    "project_id": "hotel-5204f",
+    "storage_bucket": "hotel-5204f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56739364590:android:543583ef04f820ae127dff",
+        "android_client_info": {
+          "package_name": "cm.togettech.togethouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56739364590-663cd85tuk56qk83khuhg1n5pgp8dm0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0Hida0J_B5de94b6Zg7EZb8JHWUgstfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56739364590-663cd85tuk56qk83khuhg1n5pgp8dm0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

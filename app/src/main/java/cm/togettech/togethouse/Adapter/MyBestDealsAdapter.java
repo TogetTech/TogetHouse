@@ -10,13 +10,14 @@ import android.widget.TextView;
 import com.asksira.loopingviewpager.LoopingPagerAdapter;
 import com.bumptech.glide.Glide;
 import cm.togettech.togethouse.Model.BestDealModel;
-import com.togettech.kmerdelices.R;
+
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.R;
 
 public class MyBestDealsAdapter extends LoopingPagerAdapter<BestDealModel> {
 
