@@ -9,111 +9,118 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import cm.togettech.togethouse.Callback.IBestDealCallbackListener;
-import cm.togettech.togethouse.Callback.IPopularCallbackListener;
+import cm.togettech.togethouse.Callback.IStudioCallbackListener;
+import cm.togettech.togethouse.Callback.IAppartementCallbackListener;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.BestDealModel;
-import cm.togettech.togethouse.Model.PopularCategoryModel;
+import cm.togettech.togethouse.Model.AppartementModels;
+import cm.togettech.togethouse.Model.StudioModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeViewModel extends ViewModel implements IPopularCallbackListener, IBestDealCallbackListener {
+public class HomeViewModel extends ViewModel implements IAppartementCallbackListener, IStudioCallbackListener {
 
-    private MutableLiveData<List<PopularCategoryModel>> popularList;
-    private MutableLiveData<List<BestDealModel>> bestDealList;
+    private MutableLiveData<List<AppartementModels>> appartementList;
+    private MutableLiveData<List<StudioModel>> studioList;
     private MutableLiveData<String> messageError;
 
-    private IPopularCallbackListener popularCallbackListener;
-    private IBestDealCallbackListener bestDealCallbackListener;
+    private IAppartementCallbackListener appartementCallbackListener;
+    private IStudioCallbackListener studioCallbackListener;
 
     public HomeViewModel() {
-        popularCallbackListener = this;
-        bestDealCallbackListener = this;
+        appartementCallbackListener = this;
+        studioCallbackListener = this;
     }
 
-    public MutableLiveData<List<BestDealModel>> getBestDealList() {
-        if (bestDealList == null){
-            bestDealList = new MutableLiveData<>();
+    //Appartement
+    public MutableLiveData<List<AppartementModels>> getAppartementList() {
+        if (appartementList == null){
+            appartementList = new MutableLiveData<>();
             messageError = new MutableLiveData<>();
-            loadBestDealList();
+            loadAppartementList();
         }
-        return bestDealList;
+        return  appartementList;
     }
 
-    private void loadBestDealList() {
-        List<BestDealModel>  tempList = new ArrayList<>();
-        DatabaseReference bestDealRef = FirebaseDatabase.getInstance().getReference(Common.BEST_DEALS_REF);
-        bestDealRef.addListenerForSingleValueEvent(new ValueEventListener() {
+    //Studio
+    public MutableLiveData<List<StudioModel>> getStudioList() {
+        if (studioList == null){
+            studioList = new MutableLiveData<>();
+            messageError = new MutableLiveData<>();
+            loadStudioList();
+        }
+        return studioList;
+    }
+
+    // Chargement des appartements
+    private void loadAppartementList() {
+        List<AppartementModels>  tempList = new ArrayList<>();
+        DatabaseReference appartementRef = FirebaseDatabase.getInstance().getReference(Common.APPARTEMENT_REF);
+        appartementRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot itemSnapshot:dataSnapshot.getChildren()){
 
-                    BestDealModel model = itemSnapshot.getValue(BestDealModel.class);
+                    AppartementModels model = itemSnapshot.getValue(AppartementModels.class);
                     tempList.add(model);
                 }
-                bestDealCallbackListener.onBestDealLoadSuccess(tempList);
+                appartementCallbackListener.onAppartementLoadSuccess(tempList);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                bestDealCallbackListener.onBestDealLoadFailed(databaseError.getMessage());
+                appartementCallbackListener.onAppartementLoadFailed(databaseError.getMessage());
             }
         });
     }
 
-    public MutableLiveData<List<PopularCategoryModel>> getPopularListList() {
-        if (popularList == null){
-            popularList = new MutableLiveData<>();
-            messageError = new MutableLiveData<>();
-            loadCategoryList();
-        }
-        return  popularList;
-    }
-    private void loadCategoryList() {
-        List<PopularCategoryModel>  tempList = new ArrayList<>();
-        DatabaseReference popularRef = FirebaseDatabase.getInstance().getReference(Common.POPULAR_CATEGORY_REF);
-        popularRef.addListenerForSingleValueEvent(new ValueEventListener() {
+    // Chargement des studios
+    private void loadStudioList() {
+        List<StudioModel>  tempList = new ArrayList<>();
+        DatabaseReference studioRef = FirebaseDatabase.getInstance().getReference(Common.STUDIO_REF);
+        studioRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-               for (DataSnapshot itemSnapshot:dataSnapshot.getChildren()){
+                for (DataSnapshot itemSnapshot:dataSnapshot.getChildren()){
 
-                   PopularCategoryModel model = itemSnapshot.getValue(PopularCategoryModel.class);
-                   tempList.add(model);
-               }
-               popularCallbackListener.onPopularLoadSuccess(tempList);
+                    StudioModel model = itemSnapshot.getValue(StudioModel.class);
+                    tempList.add(model);
+                }
+                studioCallbackListener.onStudioLoadSuccess(tempList);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                popularCallbackListener.onPopularLLoadFailed(databaseError.getMessage());
+                studioCallbackListener.onStudioLoadFailed(databaseError.getMessage());
             }
         });
     }
+
+
+
     public MutableLiveData<String> getMessageError() {
         return messageError;
     }
-    @Override
-    public void onPopularLoadSuccess(List<PopularCategoryModel> popularCategoryModels) {
-        popularList.setValue(popularCategoryModels);
 
+    //Exceptions appartement
+    @Override
+    public void onAppartementLoadSuccess(List<AppartementModels> appartementModels) {
+        appartementList.setValue(appartementModels);
     }
     @Override
-    public void onPopularLLoadFailed(String message) {
+    public void onAppartementLoadFailed(String message) {
         messageError.setValue(message);
 
     }
 
-
-
-
+    //Exceptions studio
     @Override
-    public void onBestDealLoadSuccess(List<BestDealModel> bestDealModels) {
-        bestDealList.setValue(bestDealModels);
+    public void onStudioLoadSuccess(List<StudioModel> studioModels) {
+        studioList.setValue(studioModels);
     }
-
     @Override
-    public void onBestDealLoadFailed(String message) {
+    public void onStudioLoadFailed(String message) {
         messageError.setValue(message);
     }
 }

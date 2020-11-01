@@ -47,6 +47,7 @@ public class FoodListFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_food_list, container, false);
         unbinder = ButterKnife.bind(this, root);
 
+        /*
         initViews();
 
         sendViewModel.getMutableLiveDataFoodList().observe(this, new Observer<List<FoodModel>>() {
@@ -57,11 +58,13 @@ public class FoodListFragment extends Fragment {
                 recycler_food_list.setLayoutAnimation(layoutAnimationController);
             }
         });
+        */
 
         return root;
     }
 
 
+    /*
     private void initViews() {
 
         ((AppCompatActivity)getActivity())
@@ -76,6 +79,8 @@ public class FoodListFragment extends Fragment {
         
         
     }
+
+     */
 
 
 

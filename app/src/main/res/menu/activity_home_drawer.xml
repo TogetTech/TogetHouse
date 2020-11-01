@@ -11,7 +11,7 @@
         <item
             android:id="@+id/nav_menu"
             android:icon="@drawable/ic_menu_category"
-            android:title="@string/menu_menu" />
+            android:title="Chambres" />
        <item
             android:id="@+id/nav_restaurant"
             android:icon="@drawable/ic_menu_restaurant"
@@ -28,17 +28,7 @@
             android:title="@string/menu_explorer" />
     </group>
 
-    <!--
-    <item android:title="@string/a_propos">
-        <menu>
-            <item
-                android:id="@+id/nav_account"
-                android:icon="@drawable/ic_menu_account"
-                android:title="@string/menu_account" />
 
-        </menu>
-    </item>
-    -->
     <item android:title="@string/application">
         <menu>
             <item

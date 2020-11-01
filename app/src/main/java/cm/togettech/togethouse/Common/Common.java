@@ -2,7 +2,7 @@ package cm.togettech.togethouse.Common;
 
 import cm.togettech.togethouse.Model.AddonModel;
 import cm.togettech.togethouse.Model.BoulangerieModel;
-import cm.togettech.togethouse.Model.CategoryModel;
+import cm.togettech.togethouse.Model.StudioModel;
 import cm.togettech.togethouse.Model.FoodModel;
 import cm.togettech.togethouse.Model.RestaurantModel;
 import cm.togettech.togethouse.Model.SizeModel;
@@ -14,19 +14,19 @@ import java.util.List;
 
 public class Common {
     public static final String USER_REFERENCESER = "Users";
-    public static final String POPULAR_CATEGORY_REF = "MostPopular";
+    public static final String APPARTEMENT_REF = "Appartements";
     public static final String BEST_DEALS_REF = "BestDeals";
 
     public static final int DEFAULT_COLUMN_COUNT = 0;
     public static final int FULL_WIDTH_COLUMN = 1;
 
-    public static final String CATEGORY_REF = "Category";
+    public static final String STUDIO_REF = "Studios";
     public static final String COMMENT_REF = "Comments";
 
 
 
     public static UserModel currentUser;
-    public static CategoryModel categorySelected;
+    public static StudioModel studioSelected;
     public static FoodModel selectedFood;
 
     public static final String RESTAURANT_REF = "Restaurant";

@@ -1,12 +1,12 @@
 package cm.togettech.togethouse.EventBus;
 
-import cm.togettech.togethouse.Model.CategoryModel;
+import cm.togettech.togethouse.Model.StudioModel;
 
 public class CategoryClick {
     private boolean success;
-    private CategoryModel categoryModel;
+    private StudioModel categoryModel;
 
-    public CategoryClick(boolean success, CategoryModel categoryModel) {
+    public CategoryClick(boolean success, StudioModel categoryModel) {
         this.success = success;
         this.categoryModel = categoryModel;
     }
@@ -19,11 +19,11 @@ public class CategoryClick {
         this.success = success;
     }
 
-    public CategoryModel getCategoryModel() {
+    public StudioModel getCategoryModel() {
         return categoryModel;
     }
 
-    public void setCategoryModel(CategoryModel categoryModel) {
+    public void setCategoryModel(StudioModel categoryModel) {
         this.categoryModel = categoryModel;
     }
 }

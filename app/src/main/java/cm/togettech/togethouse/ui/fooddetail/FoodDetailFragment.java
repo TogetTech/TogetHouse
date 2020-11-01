@@ -231,13 +231,14 @@ public class FoodDetailFragment extends Fragment implements TextWatcher {
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()){
                         //After submit to CommentRef, we will update aveger in Food
-                        addRatingToFood(commentModel.getRatingValue());
+                        //addRatingToFood(commentModel.getRatingValue());
                     }
                     waitingDialog.dismiss();
 
                 });
     }
 
+    /*
     private void addRatingToFood(float ratingValue) {
         FirebaseDatabase.getInstance()
                 .getReference(Common.CATEGORY_REF)
@@ -293,6 +294,8 @@ public class FoodDetailFragment extends Fragment implements TextWatcher {
                 });
 
     }
+
+     */
 
     private void displayInfo(FoodModel foodModel) {
         Glide.with(getContext()).load(foodModel.getImage()).into(img_food);

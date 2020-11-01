@@ -16,6 +16,7 @@ public class FoodListViewModel extends ViewModel {
 
     }
 
+    /*
     public MutableLiveData<List<FoodModel>> getMutableLiveDataFoodList() {
         if (mutableLiveDataFoodList == null) {
             mutableLiveDataFoodList = new MutableLiveData<>();
@@ -23,4 +24,6 @@ public class FoodListViewModel extends ViewModel {
         mutableLiveDataFoodList.setValue(Common.categorySelected.getFoods());
         return mutableLiveDataFoodList;
     }
+
+     */
 }

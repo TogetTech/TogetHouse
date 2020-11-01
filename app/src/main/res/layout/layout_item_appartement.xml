@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        app:cardBackgroundColor="#E6E6E6"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:id="@+id/appartement_image"
+            android:src="@drawable/bg_appartement"
+            android:layout_width="match_parent"
+            android:scaleType="center"
+            android:layout_height="290dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_anchor="@id/card_imageView"
+        app:cardBackgroundColor="#D3FFFFFF"
+        app:layout_anchorGravity="center"
+        app:pressedTranslationZ="12dp"
+        app:useCompatPadding="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/r1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/appartement_name"
+                    android:text="Cité des nations"
+                    android:fontFamily="@font/msemibold"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/appartement_prix"
+                    android:text="70.000 Fcfa / mois"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/mlight"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/r2"
+                android:layout_below="@+id/r1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/map"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:id="@+id/appartement_quartier"
+                    android:text="Obili - Montée chapelle"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/mlight"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/appart_rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/r2"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:numStars="5"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/appartement_image2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/appartement_image3"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/appartement_image4"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/appartement_image5"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/appartement_ville"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/appartement_description"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/appartement_email"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/appartement_mois"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/appartement_responsable"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/appartement_contact1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/appartement_contact2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

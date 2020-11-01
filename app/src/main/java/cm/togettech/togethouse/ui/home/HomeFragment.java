@@ -15,15 +15,15 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.asksira.loopingviewpager.LoopingViewPager;
-import cm.togettech.togethouse.Adapter.MyBestDealsAdapter;
-import cm.togettech.togethouse.Adapter.MyPopularCategoriesAdapter;
+
+import cm.togettech.togethouse.Adapter.MyAppartementAdapter;
 
 
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.Adapter.MyStudioAdapter;
 import cm.togettech.togethouse.R;
 
 public class HomeFragment extends Fragment {
@@ -32,10 +32,13 @@ public class HomeFragment extends Fragment {
     
     Unbinder unbinder;
     
-    @BindView(R.id.recycler_popular)
-    RecyclerView recycler_popular;
-    @BindView(R.id.viewpager)
-    LoopingViewPager viewPager;
+    @BindView(R.id.recycler_appartement)
+    RecyclerView recycler_appartement;
+
+    @BindView(R.id.recycler_studio)
+    RecyclerView recycler_studio;
+
+
     @BindView(R.id.loader)
     ProgressBar loader;
     @BindView(R.id.loader2)
@@ -53,37 +56,47 @@ public class HomeFragment extends Fragment {
         unbinder = ButterKnife.bind(this, root);
         init();
 
-        homeViewModel.getPopularListList().observe(this, popularCategoryModels -> {
+        homeViewModel.getAppartementList().observe(this, appartementModels -> {
 
             //Create adapter
-            MyPopularCategoriesAdapter adapter = new MyPopularCategoriesAdapter(getContext(), popularCategoryModels);
-            recycler_popular.setAdapter(adapter);
-            recycler_popular.setLayoutAnimation(layoutAnimationController);
+            MyAppartementAdapter adapter = new MyAppartementAdapter(getContext(), appartementModels);
+            recycler_appartement.setAdapter(adapter);
+            recycler_appartement.setLayoutAnimation(layoutAnimationController);
             loader.setVisibility(View.GONE);
         });
 
-        homeViewModel.getBestDealList().observe(this, bestDealModels -> {
-            MyBestDealsAdapter adapter = new MyBestDealsAdapter(getContext(), bestDealModels, true);
-            viewPager.setAdapter(adapter);
+        homeViewModel.getStudioList().observe(this, studioModels -> {
+
+            //Create adapter
+            MyStudioAdapter adapter = new MyStudioAdapter(getContext(), studioModels);
+            recycler_studio.setAdapter(adapter);
+            recycler_studio.setLayoutAnimation(layoutAnimationController);
             loader2.setVisibility(View.GONE);
         });
+
         return root;
     }
 
     private void init() {
         layoutAnimationController = AnimationUtils.loadLayoutAnimation(getContext(), R.anim.layout_item_from_left);
-        recycler_popular.setHasFixedSize(true);
-        recycler_popular.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+
+        //Load recyclerView Appartement
+        recycler_appartement.setHasFixedSize(true);
+        recycler_appartement.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+
+        //Load recyclerView Studio
+        recycler_studio.setHasFixedSize(true);
+        recycler_studio.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
     }
     @Override
     public void onResume(){
         super.onResume();
-        viewPager.resumeAutoScroll();
+        //viewPager.resumeAutoScroll();
 
     }
     @Override
     public void onPause(){
-        viewPager.pauseAutoScroll();
+        //viewPager.pauseAutoScroll();
         super.onPause();
 
     }

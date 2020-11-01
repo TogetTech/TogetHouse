@@ -12,14 +12,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import cm.togettech.togethouse.Callback.ICategoryCallbackListener;
 import cm.togettech.togethouse.Common.Common;
-import cm.togettech.togethouse.Model.CategoryModel;
+import cm.togettech.togethouse.Model.StudioModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MenuViewModel extends ViewModel implements ICategoryCallbackListener {
 
-    private MutableLiveData<List<CategoryModel>> categoryListMultable;
+    private MutableLiveData<List<StudioModel>> categoryListMultable;
     private MutableLiveData<String> messageError = new MutableLiveData<>();
     private ICategoryCallbackListener categoryCallbackListener;
 
@@ -27,24 +27,25 @@ public class MenuViewModel extends ViewModel implements ICategoryCallbackListene
         categoryCallbackListener = this;
 
     }
-    public MutableLiveData<List<CategoryModel>> getCategoryListMultable() {
+    public MutableLiveData<List<StudioModel>> getCategoryListMultable() {
         if (categoryListMultable == null){
             categoryListMultable = new MutableLiveData<>();
             messageError = new MutableLiveData<>();
-            loadCategories();
+            //loadCategories();
         }
         return categoryListMultable;
     }
 
+    /*
     private void loadCategories() {
-        List<CategoryModel> tempList = new ArrayList<>();
+        List<StudioModel> tempList = new ArrayList<>();
         DatabaseReference categoryRef = FirebaseDatabase.getInstance().getReference(Common.CATEGORY_REF);
         categoryRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot itemSnapshot:dataSnapshot.getChildren()){
 
-                    CategoryModel categoryModel = itemSnapshot.getValue(CategoryModel.class);
+                    StudioModel categoryModel = itemSnapshot.getValue(StudioModel.class);
                     categoryModel.setMenu_id(itemSnapshot.getKey());
                     tempList.add(categoryModel);
 
@@ -59,12 +60,14 @@ public class MenuViewModel extends ViewModel implements ICategoryCallbackListene
         });
     }
 
+     */
+
     public MutableLiveData<String> getMessageError() {
         return messageError;
     }
 
     @Override
-    public void onCategoryLoadSuccess(List<CategoryModel> categoryModelList) {
+    public void onCategoryLoadSuccess(List<StudioModel> categoryModelList) {
         categoryListMultable.setValue(categoryModelList);
     }
 

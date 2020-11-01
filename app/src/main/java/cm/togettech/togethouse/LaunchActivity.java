@@ -2,12 +2,15 @@ package cm.togettech.togethouse;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class LaunchActivity extends AppCompatActivity {
@@ -29,7 +32,7 @@ public class LaunchActivity extends AppCompatActivity {
         TextView headertitle = findViewById(R.id.headertitle);
         TextView subtitle = findViewById(R.id.subtitle);
 
-        ImageView ic_cards = findViewById(R.id.ic_cards);
+        RelativeLayout ic_cards = findViewById(R.id.ic_cards);
 
         LinearLayout resultOne = findViewById(R.id.resultOne);
         LinearLayout resultTwo = findViewById(R.id.resultTwo);
@@ -48,6 +51,13 @@ public class LaunchActivity extends AppCompatActivity {
         resultThree.startAnimation(btt3);
 
         btn_next.startAnimation(btt3);
+        btn_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LaunchActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
