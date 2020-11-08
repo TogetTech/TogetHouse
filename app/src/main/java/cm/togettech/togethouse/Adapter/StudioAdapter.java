@@ -25,12 +25,12 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cm.togettech.togethouse.R;
 
-public class MyStudioAdapter extends RecyclerView.Adapter<MyStudioAdapter.MyViewHolder>{
+public class StudioAdapter extends RecyclerView.Adapter<StudioAdapter.MyViewHolder>{
 
     Context context;
     List<StudioModel> studioModelList;
 
-    public MyStudioAdapter(Context context, List<StudioModel> studioModelList) {
+    public StudioAdapter(Context context, List<StudioModel> studioModelList) {
         this.context = context;
         this.studioModelList = studioModelList;
     }

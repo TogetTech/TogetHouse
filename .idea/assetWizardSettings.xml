@@ -335,8 +335,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_house" />
-                            <entry key="sourceFile" value="$USER_HOME$/Téléchargements/iconfinder-icon.svg" />
+                            <entry key="outputName" value="ic_icon" />
+                            <entry key="sourceFile" value="$USER_HOME$/Téléchargements/iconfinder-icon (3).svg" />
                           </map>
                         </option>
                       </PersistentState>

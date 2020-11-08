@@ -20,12 +20,12 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cm.togettech.togethouse.R;
 
-public class MyAppartementAdapter extends RecyclerView.Adapter<MyAppartementAdapter.MyViewHolder> {
+public class AppartementAdapter extends RecyclerView.Adapter<AppartementAdapter.MyViewHolder> {
 
     Context context;
     List<AppartementModels>appartementModels;
 
-    public MyAppartementAdapter(Context context, List<AppartementModels> appartementModels) {
+    public AppartementAdapter(Context context, List<AppartementModels> appartementModels) {
         this.context = context;
         this.appartementModels = appartementModels;
     }

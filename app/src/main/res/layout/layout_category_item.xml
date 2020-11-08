@@ -27,7 +27,7 @@
             android:id="@+id/txt_category"
             android:text="@string/popular_categories"
             android:gravity="center"
-            android:fontFamily="@font/brandon_medium"
+            android:fontFamily="@font/roboto_bold"
             android:textColor="@android:color/white"
             android:textSize="15sp"
             android:layout_width="match_parent"

@@ -42,7 +42,7 @@
 
                 <TextView
                     android:id="@+id/menu_restaurant_name"
-                    android:fontFamily="@font/brandon_medium"
+                    android:fontFamily="@font/roboto_bold"
                     android:textStyle="bold"
                     android:padding="5dp"
                     android:text="Nom du menu"
@@ -54,7 +54,7 @@
 
                 <TextView
                     android:id="@+id/menu_restaurant_prix"
-                    android:fontFamily="@font/brandon_medium"
+                    android:fontFamily="@font/roboto_bold"
                     android:textStyle="bold"
                     android:text="1000 Fcfa"
                     android:textColor="@android:color/white"

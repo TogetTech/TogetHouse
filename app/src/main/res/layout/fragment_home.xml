@@ -28,30 +28,29 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:padding="5dp"
-                    android:layout_height="50dp">
+                    android:layout_height="wrap_content">
 
                     <TextView
+                        android:id="@+id/txt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginBottom="15dp"
-                        android:fontFamily="@font/mmedium"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:paddingBottom="15dp"
                         android:text="Appartements"
-                        android:layout_centerVertical="true"
-                        android:textColor="@color/black"
-                        android:textSize="22sp"/>
+                        android:textColor="#000000"
+                        android:textSize="26sp" />
 
-                    <ProgressBar
-                        android:id="@+id/loader"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_marginEnd="15dp"
-                        android:layout_centerVertical="true"
-                        android:visibility="visible"
-                        android:layout_marginRight="15dp" />
+                    <View
+                        android:layout_below="@+id/txt"
+                        android:background="#AAAAAA"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"/>
+
 
                 </RelativeLayout>
 
@@ -72,35 +71,80 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:padding="5dp"
-                    android:layout_height="50dp">
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="8dp"
-                        android:fontFamily="@font/mmedium"
+                        android:id="@+id/stdio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/roboto_medium"
                         android:text="Studios"
                         android:layout_centerVertical="true"
-                        android:textSize="22sp"
-                        android:textColor="@color/black"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp" />
+                        android:textColor="#000000"
+                        android:paddingBottom="15dp"
+                        android:textSize="26sp"/>
 
-                    <ProgressBar
-                        android:id="@+id/loader2"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="15dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:visibility="visible"
-                        android:layout_marginRight="15dp" />
+                    <View
+                        android:layout_below="@+id/stdio"
+                        android:background="#AAAAAA"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"/>
+
+
 
                 </RelativeLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_studio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/chamb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Chambres"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000"
+                        android:paddingBottom="15dp"
+                        android:textSize="26sp"/>
+
+                    <View
+                        android:layout_below="@+id/chamb"
+                        android:background="#AAAAAA"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"/>
+
+
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_chambre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 

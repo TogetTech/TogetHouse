@@ -21,12 +21,20 @@ public class Common {
     public static final int FULL_WIDTH_COLUMN = 1;
 
     public static final String STUDIO_REF = "Studios";
+    public static final String CHAMBRE_REF = "Chambres";
+
+
+
+
     public static final String COMMENT_REF = "Comments";
 
 
 
     public static UserModel currentUser;
     public static StudioModel studioSelected;
+    public static StudioModel chambreSelected;
+
+
     public static FoodModel selectedFood;
 
     public static final String RESTAURANT_REF = "Restaurant";

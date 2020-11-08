@@ -64,7 +64,7 @@
                         android:layout_marginTop="8dp"
                         android:padding="12dp"
                         android:text="@string/username"
-                        android:fontFamily="@font/brandon_medium"
+                        android:fontFamily="@font/roboto_thin"
                         android:textColor="@color/colorPrimary"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -75,7 +75,7 @@
                         android:id="@+id/email"
                         android:paddingLeft="12dp"
                         android:text="@string/email"
-                        android:fontFamily="@font/brandon_medium"
+                        android:fontFamily="@font/roboto_bold"
                         android:textColor="@color/colorPrimaryText"
                         android:textSize="18sp"
                         android:layout_width="wrap_content"
@@ -88,7 +88,7 @@
                         android:paddingBottom="12dp"
                         android:layout_marginTop="5dp"
                         android:text="@string/telephone"
-                        android:fontFamily="@font/brandon_medium"
+                        android:fontFamily="@font/roboto_bold"
                         android:textColor="@color/colorPrimaryText"
                         android:textSize="18sp"
                         android:layout_width="wrap_content"
@@ -126,7 +126,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/brandon_medium"
+                        android:fontFamily="@font/roboto_bold"
                         android:text="@string/size"
                         android:textSize="22sp"/>
 
@@ -164,7 +164,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/brandon_medium"
+                            android:fontFamily="@font/roboto_bold"
                             android:text="@string/add_on"
                             android:textSize="22sp"/>
 
@@ -176,7 +176,6 @@
                             android:layout_marginLeft="4dp"
                             android:layout_marginTop="4dp"
                             android:src="@drawable/ic_add_box_black"
-                            android:tint="@color/colorAccent"
                             android:layout_marginStart="4dp"
                             tools:ignore="ContentDescription" />
 

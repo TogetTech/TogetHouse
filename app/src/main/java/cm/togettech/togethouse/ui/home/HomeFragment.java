@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
-import android.widget.ProgressBar;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -16,14 +15,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import cm.togettech.togethouse.Adapter.MyAppartementAdapter;
+import cm.togettech.togethouse.Adapter.AppartementAdapter;
 
 
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-import cm.togettech.togethouse.Adapter.MyStudioAdapter;
+import cm.togettech.togethouse.Adapter.ChambreAdapter;
+import cm.togettech.togethouse.Adapter.StudioAdapter;
 import cm.togettech.togethouse.R;
 
 public class HomeFragment extends Fragment {
@@ -38,11 +38,9 @@ public class HomeFragment extends Fragment {
     @BindView(R.id.recycler_studio)
     RecyclerView recycler_studio;
 
+    @BindView(R.id.recycler_chambre)
+    RecyclerView recycler_chambre;
 
-    @BindView(R.id.loader)
-    ProgressBar loader;
-    @BindView(R.id.loader2)
-    ProgressBar loader2;
 
     LayoutAnimationController layoutAnimationController;
 
@@ -58,20 +56,26 @@ public class HomeFragment extends Fragment {
 
         homeViewModel.getAppartementList().observe(this, appartementModels -> {
 
-            //Create adapter
-            MyAppartementAdapter adapter = new MyAppartementAdapter(getContext(), appartementModels);
+            //Create adapter for appartement
+            AppartementAdapter adapter = new AppartementAdapter(getContext(), appartementModels);
             recycler_appartement.setAdapter(adapter);
             recycler_appartement.setLayoutAnimation(layoutAnimationController);
-            loader.setVisibility(View.GONE);
         });
 
         homeViewModel.getStudioList().observe(this, studioModels -> {
 
-            //Create adapter
-            MyStudioAdapter adapter = new MyStudioAdapter(getContext(), studioModels);
+            //Create adapter for studio
+            StudioAdapter adapter = new StudioAdapter(getContext(), studioModels);
             recycler_studio.setAdapter(adapter);
             recycler_studio.setLayoutAnimation(layoutAnimationController);
-            loader2.setVisibility(View.GONE);
+        });
+
+        homeViewModel.getChambreList().observe(this, chambreModels -> {
+
+            //Create adapter for chambre
+            ChambreAdapter adapter = new ChambreAdapter(getContext(), chambreModels);
+            recycler_chambre.setAdapter(adapter);
+            recycler_chambre.setLayoutAnimation(layoutAnimationController);
         });
 
         return root;
@@ -87,6 +91,10 @@ public class HomeFragment extends Fragment {
         //Load recyclerView Studio
         recycler_studio.setHasFixedSize(true);
         recycler_studio.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+
+        //Load recyclerView Studio
+        recycler_chambre.setHasFixedSize(true);
+        recycler_chambre.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
     }
     @Override
     public void onResume(){

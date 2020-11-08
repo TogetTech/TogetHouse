@@ -9,28 +9,35 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import cm.togettech.togethouse.Callback.IChambreCallbackListener;
 import cm.togettech.togethouse.Callback.IStudioCallbackListener;
 import cm.togettech.togethouse.Callback.IAppartementCallbackListener;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.BestDealModel;
 import cm.togettech.togethouse.Model.AppartementModels;
+import cm.togettech.togethouse.Model.ChambreModel;
 import cm.togettech.togethouse.Model.StudioModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeViewModel extends ViewModel implements IAppartementCallbackListener, IStudioCallbackListener {
+public class HomeViewModel extends ViewModel implements
+        IAppartementCallbackListener, IStudioCallbackListener, IChambreCallbackListener {
 
     private MutableLiveData<List<AppartementModels>> appartementList;
     private MutableLiveData<List<StudioModel>> studioList;
+    private MutableLiveData<List<ChambreModel>> chambreList;
     private MutableLiveData<String> messageError;
 
     private IAppartementCallbackListener appartementCallbackListener;
     private IStudioCallbackListener studioCallbackListener;
+    private IChambreCallbackListener chambreCallbackListener;
 
     public HomeViewModel() {
         appartementCallbackListener = this;
         studioCallbackListener = this;
+        chambreCallbackListener = this;
     }
 
     //Appartement
@@ -51,6 +58,16 @@ public class HomeViewModel extends ViewModel implements IAppartementCallbackList
             loadStudioList();
         }
         return studioList;
+    }
+
+    //Chambre
+    public MutableLiveData<List<ChambreModel>> getChambreList() {
+        if (chambreList == null){
+            chambreList = new MutableLiveData<>();
+            messageError = new MutableLiveData<>();
+            loadChambreList();
+        }
+        return chambreList;
     }
 
     // Chargement des appartements
@@ -97,6 +114,27 @@ public class HomeViewModel extends ViewModel implements IAppartementCallbackList
         });
     }
 
+    // Chargement des chambres
+    private void loadChambreList() {
+        List<ChambreModel>  tempList = new ArrayList<>();
+        DatabaseReference chambreRef = FirebaseDatabase.getInstance().getReference(Common.CHAMBRE_REF);
+        chambreRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot itemSnapshot:dataSnapshot.getChildren()){
+
+                    ChambreModel model = itemSnapshot.getValue(ChambreModel.class);
+                    tempList.add(model);
+                }
+                chambreCallbackListener.onChambreLoadSuccess(tempList);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                studioCallbackListener.onStudioLoadFailed(databaseError.getMessage());
+            }
+        });
+    }
 
 
     public MutableLiveData<String> getMessageError() {
@@ -121,6 +159,17 @@ public class HomeViewModel extends ViewModel implements IAppartementCallbackList
     }
     @Override
     public void onStudioLoadFailed(String message) {
+        messageError.setValue(message);
+    }
+
+
+    //Exceptions chambre
+    @Override
+    public void onChambreLoadSuccess(List<ChambreModel> chambreModels) {
+        chambreList.setValue(chambreModels);
+    }
+    @Override
+    public void onChambreLoadFailed(String message) {
         messageError.setValue(message);
     }
 }

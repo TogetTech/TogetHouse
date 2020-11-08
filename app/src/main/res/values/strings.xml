@@ -81,5 +81,6 @@
     <string name="mytodo">TODO</string>
     <string name="todoh">TODO</string>
     <string name="todokl">TODO</string>
+    <string name="todo">TODO</string>
 
 </resources>

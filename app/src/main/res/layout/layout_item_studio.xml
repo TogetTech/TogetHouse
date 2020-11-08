@@ -8,53 +8,76 @@
     android:gravity="center"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/studio_image"
-        android:src="@drawable/bg_appartement"
-        android:layout_width="129dp"
-        android:paddingBottom="15dp"
-        android:layout_height="85dp"
-        android:background="@drawable/bg_item_studio"
-        tools:ignore="ContentDescription" />
-
     <RelativeLayout
-        android:layout_width="129dp"
-        android:paddingLeft="15dp"
-        android:paddingTop="5dp"
-        android:background="@drawable/bg_item_studio"
-        android:layout_height="85dp">
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        tools:ignore="UselessParent">
 
-        <TextView
-            android:id="@+id/studio_name"
-            android:text="Cité CEMAC"
-            android:textSize="12sp"
-            android:fontFamily="@font/roboto_thin"
-            android:textColor="@android:color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:id="@+id/studio_prix"
-            android:text="70.000 Fcfa/mois"
+        <ImageView
+            android:id="@+id/studio_image"
+            android:src="@drawable/bg_appartement"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
             android:layout_marginTop="5dp"
-            android:textSize="12sp"
-            android:layout_below="@+id/studio_name"
-            android:fontFamily="@font/roboto_thin"
-            android:textColor="@android:color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="85dp"
+            tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/studio_quartier"
-            android:text="70.000 Fcfa/mois"
-            android:layout_marginTop="5dp"
-            android:layout_below="@+id/studio_prix"
-            android:fontFamily="@font/roboto_thin"
-            android:textColor="@android:color/black"
-            android:textSize="12sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_below="@+id/studio_image"
+            android:layout_alignParentBottom="true"
+            android:background="#65070707"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:id="@+id/line1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/studio_name"
+                    android:text="Cité CEMAC"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_thin"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/studio_prix"
+                    android:text="70.000 Fcfa/mois"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_thin"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/studio_quartier"
+                    android:text="70.000 Fcfa/mois"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_thin"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:background="@drawable/rounded_studio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 

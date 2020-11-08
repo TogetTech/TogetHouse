@@ -16,7 +16,7 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import cm.togettech.togethouse.Adapter.MyStudioAdapter;
+import cm.togettech.togethouse.Adapter.StudioAdapter;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Common.SpacesItemDecoration;
 
@@ -39,7 +39,7 @@ public class MenuFragment extends Fragment {
 
     AlertDialog dialog;
     LayoutAnimationController layoutAnimationController;
-    MyStudioAdapter adapter;
+    StudioAdapter adapter;
 
     @SuppressLint("FragmentLiveDataObserve")
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -59,7 +59,7 @@ public class MenuFragment extends Fragment {
         });
         menuViewModel.getCategoryListMultable().observe(this, categoryModelList -> {
             dialog.dismiss();
-            adapter = new MyStudioAdapter(getContext(), categoryModelList);
+            adapter = new StudioAdapter(getContext(), categoryModelList);
             recycler_menu.setAdapter(adapter);
             recycler_menu.setLayoutAnimation(layoutAnimationController);
         });
