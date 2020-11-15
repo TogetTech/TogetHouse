@@ -1,6 +1,5 @@
 package cm.togettech.togethouse;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Menu;
@@ -10,14 +9,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import cm.togettech.togethouse.Database.CartDataSource;
 import cm.togettech.togethouse.Database.CartDatabase;
 import cm.togettech.togethouse.Database.LocalCartDataSource;
-import cm.togettech.togethouse.EventBus.BoulangerieDetailClick;
-import cm.togettech.togethouse.EventBus.BoulangerieItemClick;
-import cm.togettech.togethouse.EventBus.CategoryClick;
-import cm.togettech.togethouse.EventBus.CounterCartEvent;
-import cm.togettech.togethouse.EventBus.FoodItemClick;
-import cm.togettech.togethouse.EventBus.HideFabCart;
-import cm.togettech.togethouse.EventBus.RestaurantDetailClick;
-import cm.togettech.togethouse.EventBus.RestaurantItemClick;
+import cm.togettech.togethouse.EventBus.AppartementDetailClick;
+import cm.togettech.togethouse.EventBus.ChambreDetailClick;
+import cm.togettech.togethouse.EventBus.ChambreItemClick;
+import cm.togettech.togethouse.EventBus.AppartementItemClick;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
@@ -67,9 +62,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.nav_view);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_menu,
-                R.id.nav_food_detail, R.id.nav_restaurant, R.id.nav_restaurant_detail,
-                R.id.nav_boulangerie, R.id.nav_boulangerie_detail, R.id.nav_account, R.id.nav_licence)
+                R.id.nav_home, R.id.nav_chambre, R.id.nav_chambre_detail,
+                R.id.nav_studio, R.id.nav_appartement, R.id.nav_appartement_detail, R.id.nav_maison)
                 .setDrawerLayout(drawer)
                 .build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -102,24 +96,17 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_home:
                 navController.navigate(R.id.nav_home);
                 break;
-            case R.id.nav_menu:
-                navController.navigate(R.id.nav_menu);
+            case R.id.nav_chambre:
+                navController.navigate(R.id.nav_chambre);
                 break;
-            case R.id.nav_restaurant:
-                navController.navigate(R.id.nav_restaurant);
+            case R.id.nav_studio:
+                navController.navigate(R.id.nav_studio);
                 break;
-            case R.id.nav_boulangerie:
-                navController.navigate(R.id.nav_boulangerie);
+            case R.id.nav_appartement:
+                navController.navigate(R.id.nav_appartement);
                 break;
-            case R.id.nav_explorer:
-                Intent intent = new Intent(HomeActivity.this, MapsActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.nav_account:
-                navController.navigate(R.id.nav_account);
-                break;
-            case R.id.nav_licence:
-                navController.navigate(R.id.nav_licence);
+            case R.id.nav_maison:
+                navController.navigate(R.id.nav_maison);
                 break;
 
         }
@@ -140,67 +127,42 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         super.onStop();
     }
 
+
+
     @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
-    public void onCategorySelected(CategoryClick event){
+    public void onChambreItemSelected(ChambreItemClick event){
         if (event.isSuccess()){
-            navController.navigate(R.id.nav_food_list);
+            navController.navigate(R.id.nav_chambre);
         }
     }
 
     @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
-    public void onFoodItemClick(FoodItemClick event){
+    public void onChambreDetailClick(ChambreDetailClick event){
         if (event.isSuccess()){
-            navController.navigate(R.id.nav_food_detail);
+            navController.navigate(R.id.nav_chambre_detail);
         }
     }
 
+
+
+
     @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
-    public void onRestaurantItemClick(RestaurantItemClick event){
+    public void onAppartementItemClick(AppartementItemClick event){
         if (event.isSuccess()){
-            navController.navigate(R.id.nav_restaurant);
-        }
-    }
-    @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
-    public void onRestaurantDetailClick(RestaurantDetailClick event){
-        if (event.isSuccess()){
-            navController.navigate(R.id.nav_restaurant_detail);
+            navController.navigate(R.id.nav_appartement);
         }
     }
 
+
     @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
-    public void onBoulangerieItemClick(BoulangerieItemClick event){
+    public void onAppartementDetailClick(AppartementDetailClick event){
         if (event.isSuccess()){
-            navController.navigate(R.id.nav_boulangerie);
+            navController.navigate(R.id.nav_appartement_detail);
         }
     }
 
-    @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
-    public void onBoulangerieDetailClick(BoulangerieDetailClick event){
-        if (event.isSuccess()){
-            navController.navigate(R.id.nav_boulangerie_detail);
-        }
-    }
 
 
 
     //**********************************************************************************************
-    @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
-    public void onCartCounter(CounterCartEvent event){
-
-        if (event.isSuccess()){
-
-            //counterCartItem();
-
-        }
-    }
-
-    @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
-    public void onHideFabEvent(HideFabCart event){
-
-        if (event.isHidden()){
-            //fab.hide();
-        }else {
-            //fab.show();
-        }
-    }
 }

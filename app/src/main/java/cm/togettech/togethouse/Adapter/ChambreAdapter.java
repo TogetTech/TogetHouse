@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cm.togettech.togethouse.Callback.IRecyclerClickListener;
 import cm.togettech.togethouse.Common.Common;
-import cm.togettech.togethouse.EventBus.CategoryClick;
+import cm.togettech.togethouse.EventBus.ChambreDetailClick;
 import cm.togettech.togethouse.Model.ChambreModel;
 import cm.togettech.togethouse.R;
 
@@ -51,13 +51,13 @@ public class ChambreAdapter extends RecyclerView.Adapter<ChambreAdapter.MyViewHo
         holder.chambre_quartier.setText(new StringBuilder(chambreModelList.get(position).getChambre_quartier()));
 
 
-        /*Event
+        //Event
         holder.setListener((view, pos) -> {
-            Common.chambreSelected = chambreModelList.get(pos);
-            EventBus.getDefault().postSticky(new CategoryClick(true, chambreModelList.get(pos)));
+            Common.selectedChambre = chambreModelList.get(pos);
+            EventBus.getDefault().postSticky(new ChambreDetailClick(true, chambreModelList.get(pos)));
         });
 
-         */
+
     }
 
     @Override

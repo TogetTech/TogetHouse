@@ -7,34 +7,34 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_home"
-            android:title="@string/menu_home" />
+            android:title="Accueil" />
         <item
-            android:id="@+id/nav_menu"
-            android:icon="@drawable/ic_menu_category"
+            android:id="@+id/nav_chambre"
+            android:icon="@drawable/ic_menu_chambre"
             android:title="Chambres" />
        <item
-            android:id="@+id/nav_restaurant"
-            android:icon="@drawable/ic_menu_restaurant"
-            android:title="@string/menu_restaurant" />
+            android:id="@+id/nav_studio"
+            android:icon="@drawable/ic_menu_studio"
+            android:title="Studios" />
 
         <item
-            android:id="@+id/nav_boulangerie"
-            android:icon="@drawable/ic_menu_boulangerie"
-            android:title="@string/menu_boulangerie" />
+            android:id="@+id/nav_appartement"
+            android:icon="@drawable/ic_menu_appartement"
+            android:title="Appartements" />
 
         <item
-            android:id="@+id/nav_explorer"
-            android:icon="@drawable/ic_menu_explorer"
-            android:title="@string/menu_explorer" />
+            android:id="@+id/nav_maison"
+            android:icon="@drawable/ic_menu_maison"
+            android:title="Maisons" />
     </group>
 
 
-    <item android:title="@string/application">
+    <item android:title="Application">
         <menu>
             <item
                 android:id="@+id/nav_licence"
                 android:icon="@drawable/ic_licence"
-                android:title="@string/k_merd_lices" />
+                android:title="@string/app_name" />
         </menu>
     </item>
 </menu>

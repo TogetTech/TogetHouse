@@ -14,8 +14,7 @@ import cm.togettech.togethouse.Callback.IChambreCallbackListener;
 import cm.togettech.togethouse.Callback.IStudioCallbackListener;
 import cm.togettech.togethouse.Callback.IAppartementCallbackListener;
 import cm.togettech.togethouse.Common.Common;
-import cm.togettech.togethouse.Model.BestDealModel;
-import cm.togettech.togethouse.Model.AppartementModels;
+import cm.togettech.togethouse.Model.AppartementModel;
 import cm.togettech.togethouse.Model.ChambreModel;
 import cm.togettech.togethouse.Model.StudioModel;
 
@@ -25,7 +24,7 @@ import java.util.List;
 public class HomeViewModel extends ViewModel implements
         IAppartementCallbackListener, IStudioCallbackListener, IChambreCallbackListener {
 
-    private MutableLiveData<List<AppartementModels>> appartementList;
+    private MutableLiveData<List<AppartementModel>> appartementList;
     private MutableLiveData<List<StudioModel>> studioList;
     private MutableLiveData<List<ChambreModel>> chambreList;
     private MutableLiveData<String> messageError;
@@ -41,7 +40,7 @@ public class HomeViewModel extends ViewModel implements
     }
 
     //Appartement
-    public MutableLiveData<List<AppartementModels>> getAppartementList() {
+    public MutableLiveData<List<AppartementModel>> getAppartementList() {
         if (appartementList == null){
             appartementList = new MutableLiveData<>();
             messageError = new MutableLiveData<>();
@@ -72,14 +71,14 @@ public class HomeViewModel extends ViewModel implements
 
     // Chargement des appartements
     private void loadAppartementList() {
-        List<AppartementModels>  tempList = new ArrayList<>();
+        List<AppartementModel>  tempList = new ArrayList<>();
         DatabaseReference appartementRef = FirebaseDatabase.getInstance().getReference(Common.APPARTEMENT_REF);
         appartementRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot itemSnapshot:dataSnapshot.getChildren()){
 
-                    AppartementModels model = itemSnapshot.getValue(AppartementModels.class);
+                    AppartementModel model = itemSnapshot.getValue(AppartementModel.class);
                     tempList.add(model);
                 }
                 appartementCallbackListener.onAppartementLoadSuccess(tempList);
@@ -143,7 +142,7 @@ public class HomeViewModel extends ViewModel implements
 
     //Exceptions appartement
     @Override
-    public void onAppartementLoadSuccess(List<AppartementModels> appartementModels) {
+    public void onAppartementLoadSuccess(List<AppartementModel> appartementModels) {
         appartementList.setValue(appartementModels);
     }
     @Override

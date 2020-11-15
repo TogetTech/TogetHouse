@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -41,11 +40,11 @@
                         android:paddingBottom="15dp"
                         android:text="Appartements"
                         android:textColor="#000000"
-                        android:textSize="26sp" />
+                        android:textSize="22sp" />
 
                     <View
                         android:layout_below="@+id/txt"
-                        android:background="#AAAAAA"
+                        android:background="#E1E1E1"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="10dp"
                         android:layout_width="match_parent"
@@ -84,11 +83,11 @@
                         android:layout_centerVertical="true"
                         android:textColor="#000000"
                         android:paddingBottom="15dp"
-                        android:textSize="26sp"/>
+                        android:textSize="22sp"/>
 
                     <View
                         android:layout_below="@+id/stdio"
-                        android:background="#AAAAAA"
+                        android:background="#E1E1E1"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="10dp"
                         android:layout_width="match_parent"
@@ -97,6 +96,21 @@
 
 
                 </RelativeLayout>
+
+                <TextView
+                    android:text="Visite guidée"
+                    android:fontFamily="@font/roboto_thin"
+                    android:textColor="@color/silver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_studio"
@@ -129,11 +143,11 @@
                         android:layout_centerVertical="true"
                         android:textColor="#000000"
                         android:paddingBottom="15dp"
-                        android:textSize="26sp"/>
+                        android:textSize="22sp"/>
 
                     <View
                         android:layout_below="@+id/chamb"
-                        android:background="#AAAAAA"
+                        android:background="#E1E1E1"
                         android:layout_marginStart="10dp"
                         android:layout_marginLeft="10dp"
                         android:layout_width="match_parent"

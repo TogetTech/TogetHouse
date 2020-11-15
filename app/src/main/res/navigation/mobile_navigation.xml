@@ -8,76 +8,44 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="cm.togettech.togethouse.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="Acceuil"
         tools:layout="@layout/fragment_home"/>
 
     <fragment
-        android:id="@+id/nav_menu"
-        android:name="cm.togettech.togethouse.ui.menu.MenuFragment"
-        android:label="@string/menu_menu"
-        tools:layout="@layout/fragment_menu" />
+        android:id="@+id/nav_chambre"
+        android:name="cm.togettech.togethouse.ui.chambre.ChambreFragment"
+        android:label="Chambres"
+        tools:layout="@layout/fragment_chambre" />
+    <fragment
+        android:id="@+id/nav_chambre_detail"
+        android:name="cm.togettech.togethouse.ui.chambre.detail.ChambreDetailFragment"
+        android:label="Detail de chambre"
+        tools:layout="@layout/fragment_chambre_detail"/>
+
 
     <fragment
-        android:id="@+id/nav_restaurant"
-        android:name="cm.togettech.togethouse.ui.restaurant.RestaurantFragment"
-        android:label="@string/menu_restaurant"
-        tools:layout="@layout/fragment_restaurant" />
+        android:id="@+id/nav_studio"
+        android:name="cm.togettech.togethouse.ui.studio.StudioFragment"
+        android:label="Studios"
+        tools:layout="@layout/fragment_studio" />
 
     <fragment
-        android:id="@+id/nav_boulangerie"
-        android:name="cm.togettech.togethouse.ui.boulangerie.BoulangerieFragment"
-        android:label="@string/menu_boulangerie"
-        tools:layout="@layout/fragment_boulangerie" />
+        android:id="@+id/nav_appartement"
+        android:name="cm.togettech.togethouse.ui.appartement.AppartementFragment"
+        android:label="Appartements"
+        tools:layout="@layout/fragment_appartement" />
 
     <fragment
-        android:id="@+id/nav_food_detail"
-        android:name="cm.togettech.togethouse.ui.fooddetail.FoodDetailFragment"
-        android:label="@string/menu_food_detail"
-        tools:layout="@layout/fragment_food_detail" />
+        android:id="@+id/nav_appartement_detail"
+        android:name="cm.togettech.togethouse.ui.appartement.detail.AppartementDetailFragment"
+        android:label="Detail appartement"
+        tools:layout="@layout/fragment_appartement_detail" />
 
     <fragment
-        android:id="@+id/nav_food_list"
-        android:name="cm.togettech.togethouse.ui.foodlist.FoodListFragment"
-        android:label="@string/menu_food_list"
-        tools:layout="@layout/fragment_food_list" />
-
-    <fragment
-        android:id="@+id/nav_restaurant_list"
-        android:name="cm.togettech.togethouse.ui.restaurant.RestaurantFragment"
-        android:label="@string/menu_restaurant_list"
-        tools:layout="@layout/fragment_restaurant" />
-
-    <fragment
-        android:id="@+id/nav_restaurant_detail"
-        android:name="cm.togettech.togethouse.ui.restaurant.detail.RestaurantDetailFragment"
-        android:label="@string/menu_restaurant_detail"
-        tools:layout="@layout/fragment_restaurant_detail" />
-
-    <fragment
-        android:id="@+id/nav_boulangerie_list"
-        android:name="cm.togettech.togethouse.ui.boulangerie.BoulangerieFragment"
-        android:label="@string/menu_boulangerie_list"
-        tools:layout="@layout/fragment_boulangerie" />
-
-    <fragment
-        android:id="@+id/nav_boulangerie_detail"
-        android:name="cm.togettech.togethouse.ui.boulangerie.detail.BoulangerieDetailFragment"
-        android:label="@string/menu_boulangerie_detail"
-        tools:layout="@layout/fragment_boulangerie_detail" />
-
-    <fragment
-        android:id="@+id/nav_account"
-        android:name="cm.togettech.togethouse.ui.account.AccountFragment"
-        android:label="@string/menu_account"
-        tools:layout="@layout/fragment_account" />
-
-    <fragment
-        android:id="@+id/nav_licence"
-        android:name="cm.togettech.togethouse.ui.licence.LicenceFragment"
-        android:label="@string/k_merd_lices"
-        tools:layout="@layout/fragment_licence" />
-
-
+        android:id="@+id/nav_maison"
+        android:name="cm.togettech.togethouse.ui.maison.MaisonFragment"
+        android:label="Maisons"
+        tools:layout="@layout/fragment_maison" />
 
 
 </navigation>

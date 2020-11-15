@@ -6,13 +6,44 @@
     android:orientation="vertical"
     android:paddingRight="10dp"
     android:paddingLeft="10dp"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
+        android:orientation="vertical"
         android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/line2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/appartement_quartier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/roboto_thin"
+                android:text="Obili - Montée chapelle"
+                android:textColor="@color/silver"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            <ImageView
+                android:src="@drawable/map"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                tools:ignore="ContentDescription"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/appartement_name"
@@ -20,11 +51,44 @@
             android:fontFamily="@font/roboto_thin"
             android:textSize="14sp"
             android:layout_marginLeft="5dp"
-            android:textColor="@color/silver"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
+            android:textStyle="bold"
             tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Prix : "
+                android:fontFamily="@font/roboto_thin"
+                android:textColor="@color/silver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/appartement_prix"
+                android:text="70.000 Fcfa / mois"
+                android:fontFamily="@font/roboto_thin"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -41,16 +105,6 @@
             android:layout_height="match_parent"
             tools:ignore="ContentDescription" />
 
-        <RatingBar
-            android:id="@+id/appart_rating_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleX="0.2"
-            android:scaleY="0.2"
-            android:layout_alignParentEnd="true"
-            android:numStars="5"
-            android:layout_alignParentRight="true" />
-
         <RelativeLayout
             android:layout_alignParentBottom="true"
             android:padding="20dp"
@@ -66,41 +120,20 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/appartement_quartier"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:fontFamily="@font/roboto_thin"
-                    android:text="Obili - Montée chapelle"
-                    android:textColor="@color/colorText"
-                    android:textSize="16sp"
-                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
-
-                <TextView
-                    android:id="@+id/appartement_prix"
-                    android:text="70.000 Fcfa / mois"
+                    android:id="@+id/appartement_description"
+                    android:text="Cité des nations"
                     android:fontFamily="@font/roboto_thin"
                     android:textSize="14sp"
-                    android:textColor="@color/colorText"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
                     tools:ignore="HardcodedText" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/line2"
-                android:layout_alignParentEnd="true"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true">
-
-                <ImageView
-                    android:src="@drawable/map"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    tools:ignore="ContentDescription" />
 
             </LinearLayout>
 
@@ -153,11 +186,7 @@
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/appartement_description"
-            android:visibility="gone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+
         <TextView
             android:id="@+id/appartement_email"
             android:visibility="gone"

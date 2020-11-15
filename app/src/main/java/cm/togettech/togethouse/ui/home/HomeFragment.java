@@ -92,7 +92,7 @@ public class HomeFragment extends Fragment {
         recycler_studio.setHasFixedSize(true);
         recycler_studio.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
 
-        //Load recyclerView Studio
+        //Load recyclerView Chambre
         recycler_chambre.setHasFixedSize(true);
         recycler_chambre.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
     }

@@ -13,10 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import cm.togettech.togethouse.Callback.IRecyclerClickListener;
 import cm.togettech.togethouse.Common.Common;
-import cm.togettech.togethouse.EventBus.CategoryClick;
 import cm.togettech.togethouse.Model.StudioModel;
-
-import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
 
@@ -51,11 +48,13 @@ public class StudioAdapter extends RecyclerView.Adapter<StudioAdapter.MyViewHold
         holder.studio_quartier.setText(new StringBuilder(studioModelList.get(position).getStudio_quartier()));
 
 
-        //Event
+        /*Event
         holder.setListener((view, pos) -> {
             Common.studioSelected = studioModelList.get(pos);
-            EventBus.getDefault().postSticky(new CategoryClick(true, studioModelList.get(pos)));
+            EventBus.getDefault().postSticky(new ChambreClick(true, studioModelList.get(pos)));
         });
+
+         */
 
     }
 

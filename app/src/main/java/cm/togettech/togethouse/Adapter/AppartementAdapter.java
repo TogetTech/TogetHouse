@@ -11,7 +11,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import cm.togettech.togethouse.Model.AppartementModels;
+
+import org.greenrobot.eventbus.EventBus;
+
+import cm.togettech.togethouse.Callback.IRecyclerClickListener;
+import cm.togettech.togethouse.Common.Common;
+import cm.togettech.togethouse.EventBus.AppartementDetailClick;
+import cm.togettech.togethouse.Model.AppartementModel;
 
 import java.util.List;
 
@@ -23,11 +29,11 @@ import cm.togettech.togethouse.R;
 public class AppartementAdapter extends RecyclerView.Adapter<AppartementAdapter.MyViewHolder> {
 
     Context context;
-    List<AppartementModels>appartementModels;
+    List<AppartementModel>appartementModelList;
 
-    public AppartementAdapter(Context context, List<AppartementModels> appartementModels) {
+    public AppartementAdapter(Context context, List<AppartementModel> appartementModels) {
         this.context = context;
-        this.appartementModels = appartementModels;
+        this.appartementModelList = appartementModelList;
     }
 
     @NonNull
@@ -39,23 +45,29 @@ public class AppartementAdapter extends RecyclerView.Adapter<AppartementAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Glide.with(context).load(appartementModels.get(position).getAppart_image())
+        Glide.with(context).load(appartementModelList.get(position).getAppart_image())
                .into(holder.appartement_image);
 
+        holder.appartement_name.setText(appartementModelList.get(position).getAppart_nom());
+        holder.appartement_quartier.setText(appartementModelList.get(position).getAppart_quartier());
+        holder.appartement_prix.setText(appartementModelList.get(position).getAppart_prix());
+        holder.appartement_description.setText(appartementModelList.get(position).getAppart_description());
 
-        holder.appartement_name.setText(appartementModels.get(position).getAppart_nom());
-        holder.appartement_quartier.setText(appartementModels.get(position).getAppart_quartier());
-        holder.appartement_prix.setText(appartementModels.get(position).getAppart_prix());
+        //Event
+        holder.setListener((view, pos) -> {
+            Common.selectedAppartement = appartementModelList.get(pos);
+            EventBus.getDefault().postSticky(new AppartementDetailClick(true, appartementModelList.get(pos)));
+        });
 
 
     }
 
     @Override
     public int getItemCount() {
-        return appartementModels.size();
+        return appartementModelList.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         Unbinder unbinder;
 
         @BindView(R.id.appartement_image)
@@ -90,11 +102,33 @@ public class AppartementAdapter extends RecyclerView.Adapter<AppartementAdapter.
         @BindView(R.id.appartement_contact2)
         TextView appartement_contact2;
 
+        IRecyclerClickListener listener;
+
+        public void setListener(IRecyclerClickListener listener){
+            this.listener = listener;
+        }
+
         public MyViewHolder(@NonNull View itemView){
             super(itemView);
             unbinder = ButterKnife.bind(this, itemView);
+            itemView.setOnClickListener((View.OnClickListener) this);
         }
 
+        @Override
+        public void onClick(View v) {
+            listener.onItemClickListener(v, getAdapterPosition());
+        }
+    }
 
+    @Override
+    public int getItemViewType(int position) {
+        if (appartementModelList.size() == 1)
+            return Common.DEFAULT_COLUMN_COUNT;
+        else {
+            if (appartementModelList.size() % 2 == 0)
+                return Common.DEFAULT_COLUMN_COUNT;
+            else
+                return (position > 1 && position == appartementModelList.size() - 1) ? Common.FULL_WIDTH_COLUMN:Common.DEFAULT_COLUMN_COUNT;
+        }
     }
 }

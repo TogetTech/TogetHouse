@@ -1,6 +1,5 @@
 package cm.togettech.togethouse.Callback;
 
-import cm.togettech.togethouse.Model.BestDealModel;
 import cm.togettech.togethouse.Model.StudioModel;
 
 import java.util.List;

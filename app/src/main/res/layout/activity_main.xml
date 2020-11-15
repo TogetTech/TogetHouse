@@ -19,7 +19,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
             android:fontFamily="@font/roboto_thin"
-            android:text="@string/inscrivez_vous"
+            android:text="Inscrivez-vous"
             android:textColor="@color/colorPrimary"
             android:textSize="22sp" />
 
