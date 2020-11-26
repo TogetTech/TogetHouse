@@ -6,14 +6,20 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.asksira.loopingviewpager.LoopingViewPager;
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,11 +27,14 @@ import com.google.firebase.auth.FirebaseUser;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.Adapter.AppartementAdapter;
+import cm.togettech.togethouse.Adapter.BestAppartementAdapter;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.AppartementModel;
 import cm.togettech.togethouse.Model.ChambreModel;
 import cm.togettech.togethouse.R;
 import cm.togettech.togethouse.ui.chambre.detail.ChambreDetailViewModel;
+import de.hdodenhof.circleimageview.CircleImageView;
 import dmax.dialog.SpotsDialog;
 
 
@@ -65,6 +74,20 @@ public class AppartementDetailFragment extends Fragment {
     @BindView(R.id.appart_email)
     TextView appart_email;
 
+    @BindView(R.id.appart_image2)
+    CircleImageView appart_image2;
+    @BindView(R.id.appart_image3)
+    CircleImageView appart_image3;
+    @BindView(R.id.appart_image4)
+    CircleImageView appart_image4;
+    @BindView(R.id.appart_image5)
+    CircleImageView appart_image5;
+
+
+    @BindView(R.id.viewpager)
+    LoopingViewPager viewPager;
+
+
     LayoutAnimationController layoutAnimationController;
 
     @SuppressLint("FragmentLiveDataObserve")
@@ -74,7 +97,7 @@ public class AppartementDetailFragment extends Fragment {
 
         appartementDetailViewModel =
                 ViewModelProviders.of(this).get(AppartementDetailViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_chambre_detail, container, false);
+        View root = inflater.inflate(R.layout.fragment_appartement_detail, container, false);
         unbinder = ButterKnife.bind(this, root);
         initViews();
 
@@ -82,6 +105,14 @@ public class AppartementDetailFragment extends Fragment {
             displayDetailAppartement(appartementModel);
         });
 
+
+        appartementDetailViewModel.getAppartementList().observe(this, appartementModels -> {
+
+            //Create adapter for appartement
+            BestAppartementAdapter adapter = new BestAppartementAdapter(getContext(), appartementModels, true);
+            viewPager.setAdapter(adapter);
+            viewPager.setLayoutAnimation(layoutAnimationController);
+        });
 
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
@@ -102,6 +133,10 @@ public class AppartementDetailFragment extends Fragment {
         appart_contact2.setText(new StringBuilder(appartementModel.getAppart_contact2()));
         appart_email.setText(new StringBuilder(appartementModel.getAppart_email()));
 
+        Glide.with(getContext()).load(appartementModel.getAppart_image2()).into(appart_image2);
+        Glide.with(getContext()).load(appartementModel.getAppart_image3()).into(appart_image3);
+        Glide.with(getContext()).load(appartementModel.getAppart_image4()).into(appart_image4);
+        Glide.with(getContext()).load(appartementModel.getAppart_image5()).into(appart_image5);
 
 
         ((AppCompatActivity)getActivity())
@@ -111,6 +146,20 @@ public class AppartementDetailFragment extends Fragment {
 
     private void initViews() {
         waitingDialog = new SpotsDialog.Builder().setCancelable(false).setContext(getContext()).build();
+        layoutAnimationController = AnimationUtils.loadLayoutAnimation(getContext(), R.anim.layout_item_from_left);
+
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        viewPager.resumeAutoScroll();
+
+    }
+    @Override
+    public void onPause(){
+        viewPager.pauseAutoScroll();
+        super.onPause();
 
     }
 }

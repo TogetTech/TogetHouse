@@ -31,7 +31,7 @@ public class AppartementAdapter extends RecyclerView.Adapter<AppartementAdapter.
     Context context;
     List<AppartementModel>appartementModelList;
 
-    public AppartementAdapter(Context context, List<AppartementModel> appartementModels) {
+    public AppartementAdapter(Context context, List<AppartementModel> appartementModelList) {
         this.context = context;
         this.appartementModelList = appartementModelList;
     }
@@ -46,12 +46,12 @@ public class AppartementAdapter extends RecyclerView.Adapter<AppartementAdapter.
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Glide.with(context).load(appartementModelList.get(position).getAppart_image())
-               .into(holder.appartement_image);
+               .into(holder.appart_image);
 
-        holder.appartement_name.setText(appartementModelList.get(position).getAppart_nom());
-        holder.appartement_quartier.setText(appartementModelList.get(position).getAppart_quartier());
-        holder.appartement_prix.setText(appartementModelList.get(position).getAppart_prix());
-        holder.appartement_description.setText(appartementModelList.get(position).getAppart_description());
+        holder.appart_nom.setText(appartementModelList.get(position).getAppart_nom());
+        holder.appart_quartier.setText(appartementModelList.get(position).getAppart_quartier());
+        holder.appart_prix.setText(appartementModelList.get(position).getAppart_prix());
+        holder.appart_description.setText(appartementModelList.get(position).getAppart_description());
 
         //Event
         holder.setListener((view, pos) -> {
@@ -70,37 +70,37 @@ public class AppartementAdapter extends RecyclerView.Adapter<AppartementAdapter.
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         Unbinder unbinder;
 
-        @BindView(R.id.appartement_image)
-        ImageView appartement_image;
-        @BindView(R.id.appartement_image2)
-        ImageView appartement_image2;
-        @BindView(R.id.appartement_image3)
-        ImageView appartement_image3;
-        @BindView(R.id.appartement_image4)
-        ImageView appartement_image4;
-        @BindView(R.id.appartement_image5)
-        ImageView appartement_image5;
+        @BindView(R.id.appart_image)
+        ImageView appart_image;
+        @BindView(R.id.appart_image2)
+        ImageView appart_image2;
+        @BindView(R.id.appart_image3)
+        ImageView appart_image3;
+        @BindView(R.id.appart_image4)
+        ImageView appart_image4;
+        @BindView(R.id.appart_image5)
+        ImageView appart_image5;
 
-        @BindView(R.id.appartement_name)
-        TextView appartement_name;
-        @BindView(R.id.appartement_prix)
-        TextView appartement_prix;
-        @BindView(R.id.appartement_quartier)
-        TextView appartement_quartier;
-        @BindView(R.id.appartement_ville)
-        TextView appartement_ville;
-        @BindView(R.id.appartement_description)
-        TextView appartement_description;
-        @BindView(R.id.appartement_email)
-        TextView appartement_email;
-        @BindView(R.id.appartement_mois)
+        @BindView(R.id.appart_nom)
+        TextView appart_nom;
+        @BindView(R.id.appart_prix)
+        TextView appart_prix;
+        @BindView(R.id.appart_quartier)
+        TextView appart_quartier;
+        @BindView(R.id.appart_ville)
+        TextView appart_ville;
+        @BindView(R.id.appart_description)
+        TextView appart_description;
+        @BindView(R.id.appart_email)
+        TextView appart_email;
+        @BindView(R.id.appart_mois)
         TextView appartement_mois;
-        @BindView(R.id.appartement_responsable)
-        TextView appartement_responsable;
-        @BindView(R.id.appartement_contact1)
-        TextView appartement_contact1;
-        @BindView(R.id.appartement_contact2)
-        TextView appartement_contact2;
+        @BindView(R.id.appart_responsable)
+        TextView appart_responsable;
+        @BindView(R.id.appart_contact1)
+        TextView appart_contact1;
+        @BindView(R.id.appart_contact2)
+        TextView appart_contact2;
 
         IRecyclerClickListener listener;
 

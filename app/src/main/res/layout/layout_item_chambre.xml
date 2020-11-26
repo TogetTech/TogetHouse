@@ -27,8 +27,8 @@
         <RelativeLayout
             android:layout_below="@+id/chambre_image"
             android:layout_alignParentBottom="true"
-            android:background="#65070707"
-            android:padding="10dp"
+            android:background="#65FFFFFF"
+            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -43,7 +43,7 @@
                     android:text="Cité CEMAC"
                     android:textSize="12sp"
                     android:fontFamily="@font/roboto_thin"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/blueSecond"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
@@ -54,7 +54,7 @@
                     android:layout_marginTop="5dp"
                     android:textSize="12sp"
                     android:fontFamily="@font/roboto_thin"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/blueSecond"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
@@ -64,13 +64,14 @@
                     android:text="70.000 Fcfa/mois"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/roboto_thin"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/blueSecond"
                     android:textSize="12sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>
+
 
         </RelativeLayout>
 

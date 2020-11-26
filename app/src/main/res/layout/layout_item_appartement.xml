@@ -22,7 +22,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/appartement_quartier"
+                android:id="@+id/appart_quartier"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
@@ -46,7 +46,7 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/appartement_name"
+            android:id="@+id/appart_nom"
             android:text="Cité des nations"
             android:fontFamily="@font/roboto_thin"
             android:textSize="14sp"
@@ -77,7 +77,7 @@
                 tools:ignore="HardcodedText" />
 
             <TextView
-                android:id="@+id/appartement_prix"
+                android:id="@+id/appart_prix"
                 android:text="70.000 Fcfa / mois"
                 android:fontFamily="@font/roboto_thin"
                 android:textColor="@color/black"
@@ -97,7 +97,7 @@
         android:layout_height="250dp">
 
         <ImageView
-            android:id="@+id/appartement_image"
+            android:id="@+id/appart_image"
             android:src="@drawable/bg_appartement"
             android:layout_width="match_parent"
             android:scaleType="center"
@@ -109,7 +109,7 @@
             android:layout_alignParentBottom="true"
             android:padding="20dp"
             android:layout_margin="5dp"
-            android:background="#65070707"
+            android:background="#81000000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -120,9 +120,9 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/appartement_description"
+                    android:id="@+id/appart_ville"
                     android:text="Cité des nations"
-                    android:fontFamily="@font/roboto_thin"
+                    android:fontFamily="@font/regular"
                     android:textSize="14sp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
@@ -152,7 +152,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/appartement_image2"
+            android:id="@+id/appart_image2"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:scaleType="centerCrop"
@@ -160,21 +160,21 @@
             tools:ignore="ContentDescription"
             android:contentDescription="@string/todo" />
         <ImageView
-            android:id="@+id/appartement_image3"
+            android:id="@+id/appart_image3"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:scaleType="centerCrop"
             android:layout_height="wrap_content"
             tools:ignore="ContentDescription" />
         <ImageView
-            android:id="@+id/appartement_image4"
+            android:id="@+id/appart_image4"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:scaleType="centerCrop"
             android:layout_height="wrap_content"
             tools:ignore="ContentDescription" />
         <ImageView
-            android:id="@+id/appartement_image5"
+            android:id="@+id/appart_image5"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:scaleType="centerCrop"
@@ -182,34 +182,34 @@
             tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/appartement_ville"
+            android:id="@+id/appart_description"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:id="@+id/appartement_email"
+            android:id="@+id/appart_email"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/appartement_mois"
+            android:id="@+id/appart_mois"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/appartement_responsable"
+            android:id="@+id/appart_responsable"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:id="@+id/appartement_contact1"
+            android:id="@+id/appart_contact1"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/appartement_contact2"
+            android:id="@+id/appart_contact2"
             android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

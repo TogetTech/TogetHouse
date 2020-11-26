@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <color name="colorPrimary">#00C9F8</color>
-    <color name="colorPrimaryDark">#00C9F8</color>
-    <color name="colorAccent">#00C9F8</color>
+    <color name="colorPrimary">#26c6da</color>
+    <color name="colorPrimaryDark">#0095a8</color>
+    <color name="colorAccent">#0095a8</color>
     <color name="overlay_color">#48F4F4F4</color>
     <color name="greenC">#01D277</color>
     <color name="purpleC">#0066FF</color>
