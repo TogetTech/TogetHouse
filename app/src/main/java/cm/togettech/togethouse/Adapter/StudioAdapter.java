@@ -43,7 +43,7 @@ public class StudioAdapter extends RecyclerView.Adapter<StudioAdapter.MyViewHold
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Glide.with(context).load(studioModelList.get(position).getStudio_image())
                 .into(holder.studio_image);
-        holder.studio_name.setText(new StringBuilder(studioModelList.get(position).getStudio_nom()));
+        holder.studio_nom.setText(new StringBuilder(studioModelList.get(position).getStudio_nom()));
         holder.studio_prix.setText(new StringBuilder(studioModelList.get(position).getStudio_prix()));
         holder.studio_quartier.setText(new StringBuilder(studioModelList.get(position).getStudio_quartier()));
 
@@ -65,14 +65,38 @@ public class StudioAdapter extends RecyclerView.Adapter<StudioAdapter.MyViewHold
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener     {
         Unbinder unbinder;
+
         @BindView(R.id.studio_image)
         ImageView studio_image;
-        @BindView(R.id.studio_name)
-        TextView studio_name;
+        @BindView(R.id.studio_image2)
+        ImageView studio_image2;
+        @BindView(R.id.studio_image3)
+        ImageView studio_image3;
+        @BindView(R.id.studio_image4)
+        ImageView studio_image4;
+        @BindView(R.id.studio_image5)
+        ImageView studio_image5;
+
+        @BindView(R.id.studio_nom)
+        TextView studio_nom;
         @BindView(R.id.studio_prix)
         TextView studio_prix;
         @BindView(R.id.studio_quartier)
         TextView studio_quartier;
+        @BindView(R.id.studio_ville)
+        TextView studio_ville;
+        @BindView(R.id.studio_description)
+        TextView studio_description;
+        @BindView(R.id.studio_email)
+        TextView studio_email;
+        @BindView(R.id.studio_mois)
+        TextView studio_mois;
+        @BindView(R.id.studio_responsable)
+        TextView studio_responsable;
+        @BindView(R.id.studio_contact1)
+        TextView studio_contact1;
+        @BindView(R.id.studio_contact2)
+        TextView studio_contact2;
 
         IRecyclerClickListener listener;
 

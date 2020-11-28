@@ -9,6 +9,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,6 +23,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.asksira.loopingviewpager.LoopingViewPager;
 import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,6 +36,8 @@ import java.util.Map;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cm.togettech.togethouse.Adapter.BestChambreAdapter;
+import cm.togettech.togethouse.Adapter.BestTerrainAdapter;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.ChambreModel;
 import cm.togettech.togethouse.R;
@@ -76,6 +80,9 @@ public class ChambreDetailFragment extends Fragment {
     @BindView(R.id.chambre_email)
     TextView chambre_email;
 
+    @BindView(R.id.viewpager)
+    LoopingViewPager viewPager;
+
     LayoutAnimationController layoutAnimationController;
 
 
@@ -92,6 +99,14 @@ public class ChambreDetailFragment extends Fragment {
 
         chambreDetailViewModel.getMutableLiveDataChambre().observe(this, chambreModel ->  {
             displayDetailChambre(chambreModel);
+        });
+
+        chambreDetailViewModel.getChambreList().observe(this, chambreModels -> {
+
+            //Create adapter for other terrain
+            BestChambreAdapter bestChambreAdapter = new BestChambreAdapter(getContext(), chambreModels, true);
+            viewPager.setAdapter(bestChambreAdapter);
+            viewPager.setLayoutAnimation(layoutAnimationController);
         });
 
 
@@ -123,6 +138,7 @@ public class ChambreDetailFragment extends Fragment {
 
     private void initViews() {
         waitingDialog = new SpotsDialog.Builder().setCancelable(false).setContext(getContext()).build();
+
 
     }
 }

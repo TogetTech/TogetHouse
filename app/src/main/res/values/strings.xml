@@ -13,10 +13,6 @@
     <string name="licence">Licence</string>
 
 
-
-
-
-
     <string name="access_token" translatable="false">pk.eyJ1IjoidG9nZXR0ZWNoIiwiYSI6ImNrOGdlZHhqZDAwbjgzbnJ3ZGxqcWdsYXUifQ.kyhj_YBygcaME-ipVng1kw</string>
     <string name="purple_map_style" translatable="false">mapbox://styles/mapbox/cj7bww7is2f4i2rnwyxkzpwu7</string>
     <string name="blue_map_style" translatable="false">mapbox://styles/mapbox/cj7bwwv3caf7l2spgukxm8bwv</string>
@@ -49,5 +45,7 @@
     <string name="todoh">TODO</string>
     <string name="todokl">TODO</string>
     <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

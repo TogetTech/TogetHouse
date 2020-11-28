@@ -17,6 +17,7 @@
             android:background="@android:color/white"
             tools:ignore="UselessParent">
 
+            <!--Appartements -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,6 +61,7 @@
 
             </LinearLayout>
 
+            <!--Studios -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,9 +110,21 @@
                     android:textAllCaps="true"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     tools:ignore="HardcodedText" />
 
+                <TextView
+                    android:text="Studio ultra modernes, modernes et simples"
+                    android:fontFamily="@font/roboto_thin"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_studio"
@@ -120,6 +134,7 @@
 
             </LinearLayout>
 
+            <!--Chambres -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -157,8 +172,183 @@
 
                 </RelativeLayout>
 
+                <TextView
+                    android:text="Découvrez toute les chambres disponibles"
+                    android:fontFamily="@font/roboto_thin"
+                    android:textColor="@color/silver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Chambres à proximitées"
+                    android:fontFamily="@font/roboto_thin"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycler_chambre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <!--Maisons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/maison"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Maisons"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000"
+                        android:paddingBottom="15dp"
+                        android:textSize="22sp"/>
+
+                    <View
+                        android:layout_below="@+id/maison"
+                        android:background="#E1E1E1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"/>
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:text="Maisons en ventes et en locations disponibles"
+                    android:fontFamily="@font/roboto_thin"
+                    android:visibility="gone"
+                    android:textColor="@color/silver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Visitez vos habitations de rêves"
+                    android:fontFamily="@font/roboto_thin"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_maison"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <!--Terrain -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/terrain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Terrains titrés"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000000"
+                        android:paddingBottom="15dp"
+                        android:textSize="22sp"/>
+
+                    <View
+                        android:layout_below="@+id/terrain"
+                        android:background="#E1E1E1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"/>
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:text="Nous vous aidons à mieux choisir"
+                    android:fontFamily="@font/roboto_thin"
+                    android:textColor="@color/silver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:text="Tarrains disponibles"
+                    android:fontFamily="@font/roboto_thin"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_terrain"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 

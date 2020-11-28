@@ -56,8 +56,8 @@ public class AppartementDetailViewModel extends ViewModel implements IAppartemen
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot itemSnapshot:dataSnapshot.getChildren()){
 
-                    AppartementModel model = itemSnapshot.getValue(AppartementModel.class);
-                    tempList.add(model);
+                    AppartementModel appartementModel = itemSnapshot.getValue(AppartementModel.class);
+                    tempList.add(appartementModel);
                 }
                 appartementCallbackListener.onAppartementLoadSuccess(tempList);
             }

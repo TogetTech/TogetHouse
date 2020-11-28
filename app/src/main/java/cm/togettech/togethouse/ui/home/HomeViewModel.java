@@ -11,32 +11,42 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import cm.togettech.togethouse.Callback.IChambreCallbackListener;
+import cm.togettech.togethouse.Callback.IMaisonCallbackListener;
 import cm.togettech.togethouse.Callback.IStudioCallbackListener;
 import cm.togettech.togethouse.Callback.IAppartementCallbackListener;
+import cm.togettech.togethouse.Callback.ITerrainCallbackListener;
 import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.Model.AppartementModel;
 import cm.togettech.togethouse.Model.ChambreModel;
+import cm.togettech.togethouse.Model.MaisonModel;
 import cm.togettech.togethouse.Model.StudioModel;
+import cm.togettech.togethouse.Model.TerrainModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomeViewModel extends ViewModel implements
-        IAppartementCallbackListener, IStudioCallbackListener, IChambreCallbackListener {
+        IAppartementCallbackListener, IStudioCallbackListener, IChambreCallbackListener, IMaisonCallbackListener, ITerrainCallbackListener {
 
     private MutableLiveData<List<AppartementModel>> appartementList;
     private MutableLiveData<List<StudioModel>> studioList;
     private MutableLiveData<List<ChambreModel>> chambreList;
+    private MutableLiveData<List<MaisonModel>> maisonList;
+    private MutableLiveData<List<TerrainModel>> terrainList;
     private MutableLiveData<String> messageError;
 
     private IAppartementCallbackListener appartementCallbackListener;
     private IStudioCallbackListener studioCallbackListener;
     private IChambreCallbackListener chambreCallbackListener;
+    private IMaisonCallbackListener maisonCallbackListener;
+    private ITerrainCallbackListener terrainCallbackListener;
 
     public HomeViewModel() {
         appartementCallbackListener = this;
         studioCallbackListener = this;
         chambreCallbackListener = this;
+        maisonCallbackListener = this;
+        terrainCallbackListener = this;
     }
 
     //Appartement
@@ -68,6 +78,28 @@ public class HomeViewModel extends ViewModel implements
         }
         return chambreList;
     }
+
+
+    //Maison
+    public MutableLiveData<List<MaisonModel>> getMaisonList() {
+        if (maisonList == null){
+            maisonList = new MutableLiveData<>();
+            messageError = new MutableLiveData<>();
+            loadMaisonList();
+        }
+        return  maisonList;
+    }
+
+    //Maison
+    public MutableLiveData<List<TerrainModel>> getTerrainList() {
+        if (terrainList == null){
+            terrainList = new MutableLiveData<>();
+            messageError = new MutableLiveData<>();
+            loadTerrainList();
+        }
+        return  terrainList;
+    }
+
 
     // Chargement des appartements
     private void loadAppartementList() {
@@ -135,10 +167,54 @@ public class HomeViewModel extends ViewModel implements
         });
     }
 
+    // Chargement des maisons
+    private void loadMaisonList() {
+        List<MaisonModel>  tempList = new ArrayList<>();
+        DatabaseReference maisonRef = FirebaseDatabase.getInstance().getReference(Common.MAISON_REF);
+        maisonRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot itemSnapshot:dataSnapshot.getChildren()){
+
+                    MaisonModel model = itemSnapshot.getValue(MaisonModel.class);
+                    tempList.add(model);
+                }
+                maisonCallbackListener.onMaisonLoadSuccess(tempList);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                maisonCallbackListener.onMaisonLoadFailed(databaseError.getMessage());
+            }
+        });
+    }
+
+    // Chargement des terrains
+    private void loadTerrainList() {
+        List<TerrainModel>  tempList = new ArrayList<>();
+        DatabaseReference terrainRef = FirebaseDatabase.getInstance().getReference(Common.TERRAIN_REF);
+        terrainRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot itemSnapshot:dataSnapshot.getChildren()){
+
+                    TerrainModel terrainModel = itemSnapshot.getValue(TerrainModel.class);
+                    tempList.add(terrainModel);
+                }
+                terrainCallbackListener.onTerrainLoadSuccess(tempList);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                terrainCallbackListener.onTerrainLoadFailed(databaseError.getMessage());
+            }
+        });
+    }
 
     public MutableLiveData<String> getMessageError() {
         return messageError;
     }
+
 
     //Exceptions appartement
     @Override
@@ -148,7 +224,6 @@ public class HomeViewModel extends ViewModel implements
     @Override
     public void onAppartementLoadFailed(String message) {
         messageError.setValue(message);
-
     }
 
     //Exceptions studio
@@ -161,7 +236,6 @@ public class HomeViewModel extends ViewModel implements
         messageError.setValue(message);
     }
 
-
     //Exceptions chambre
     @Override
     public void onChambreLoadSuccess(List<ChambreModel> chambreModels) {
@@ -169,6 +243,26 @@ public class HomeViewModel extends ViewModel implements
     }
     @Override
     public void onChambreLoadFailed(String message) {
+        messageError.setValue(message);
+    }
+
+    //Exceptions maison
+    @Override
+    public void onMaisonLoadSuccess(List<MaisonModel> maisonModels) {
+        maisonList.setValue(maisonModels);
+    }
+    @Override
+    public void onMaisonLoadFailed(String message) {
+        messageError.setValue(message);
+    }
+
+    //Exceptions terrain
+    @Override
+    public void onTerrainLoadSuccess(List<TerrainModel> terrainModels) {
+        terrainList.setValue(terrainModels);
+    }
+    @Override
+    public void onTerrainLoadFailed(String message) {
         messageError.setValue(message);
     }
 }

@@ -24,6 +24,7 @@ import cm.togettech.togethouse.Common.Common;
 import cm.togettech.togethouse.EventBus.ChambreDetailClick;
 import cm.togettech.togethouse.Model.ChambreModel;
 import cm.togettech.togethouse.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ChambreAdapter extends RecyclerView.Adapter<ChambreAdapter.MyViewHolder>{
 
@@ -68,7 +69,7 @@ public class ChambreAdapter extends RecyclerView.Adapter<ChambreAdapter.MyViewHo
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener     {
         Unbinder unbinder;
         @BindView(R.id.chambre_image)
-        ImageView chambre_image;
+        CircleImageView chambre_image;
         @BindView(R.id.chambre_name)
         TextView chambre_name;
         @BindView(R.id.chambre_prix)

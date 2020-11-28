@@ -3,8 +3,10 @@ package cm.togettech.togethouse.Common;
 import cm.togettech.togethouse.Model.AddonModel;
 import cm.togettech.togethouse.Model.AppartementModel;
 import cm.togettech.togethouse.Model.ChambreModel;
+import cm.togettech.togethouse.Model.MaisonModel;
 import cm.togettech.togethouse.Model.StudioModel;
 import cm.togettech.togethouse.Model.SizeModel;
+import cm.togettech.togethouse.Model.TerrainModel;
 import cm.togettech.togethouse.Model.UserModel;
 
 import java.math.RoundingMode;
@@ -25,7 +27,8 @@ public class Common {
 
 
     public static final String COMMENT_REF = "Comments";
-
+    public static final String MAISON_REF = "Maisons";
+    public static final String TERRAIN_REF = "Terrains";
 
 
     public static UserModel currentUser;
@@ -33,10 +36,12 @@ public class Common {
 
     public static ChambreModel selectedChambre;
     public static AppartementModel selectedAppartement;
+    public static MaisonModel selectedMaison;
 
 
 
     public static UserModel userSelected;
+    public static TerrainModel selectedTerrain;
 
 
     public static String formatPrice(double price){

@@ -22,7 +22,6 @@
         android:label="Detail de chambre"
         tools:layout="@layout/fragment_chambre_detail"/>
 
-
     <fragment
         android:id="@+id/nav_studio"
         android:name="cm.togettech.togethouse.ui.studio.StudioFragment"
@@ -46,6 +45,25 @@
         android:name="cm.togettech.togethouse.ui.maison.MaisonFragment"
         android:label="Maisons"
         tools:layout="@layout/fragment_maison" />
+
+    <fragment
+        android:id="@+id/nav_maison_detail"
+        android:name="cm.togettech.togethouse.ui.maison.detail.MaisonDetailFragment"
+        android:label="Detail maison"
+        tools:layout="@layout/fragment_maison_detail"/>
+
+
+    <fragment
+        android:id="@+id/nav_terrain"
+        android:name="cm.togettech.togethouse.ui.terrain.TerrainFragment"
+        android:label="Terrains"
+        tools:layout="@layout/fragment_terrain" />
+
+    <fragment
+        android:id="@+id/nav_terrain_detail"
+        android:name="cm.togettech.togethouse.ui.terrain.detail.TerrainDetailFragment"
+        android:label="Detail terrains"
+        tools:layout="@layout/fragment_terrain_detail" />
 
 
 </navigation>

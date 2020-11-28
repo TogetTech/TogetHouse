@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:orientation="vertical"
-    android:layout_margin="5dp"
-    android:gravity="center"
-    android:layout_height="wrap_content">
+    android:layout_width="180dp"
+    android:padding="10dp"
+    android:layout_height="290dp">
 
-    <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="180dp"
-        tools:ignore="UselessParent">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/chambre_image"
             android:src="@drawable/bg_appartement"
-            android:layout_width="match_parent"
+            android:layout_width="180dp"
             android:scaleType="centerCrop"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_height="85dp"
+            android:layout_height="180dp"
             tools:ignore="ContentDescription" />
 
         <RelativeLayout
-            android:layout_below="@+id/chambre_image"
+            android:background="#81000000"
+            android:layout_marginTop="5dp"
             android:layout_alignParentBottom="true"
-            android:background="#65FFFFFF"
-            android:layout_margin="10dp"
+            android:layout_below="@id/chambre_image"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <LinearLayout
                 android:id="@+id/line1"
                 android:orientation="vertical"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/chambre_name"
+                    android:visibility="gone"
                     android:text="Cité CEMAC"
                     android:textSize="12sp"
                     android:fontFamily="@font/roboto_thin"
@@ -51,10 +45,9 @@
                 <TextView
                     android:id="@+id/chambre_prix"
                     android:text="70.000 Fcfa/mois"
-                    android:layout_marginTop="5dp"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/roboto_thin"
-                    android:textColor="@color/blueSecond"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/brandon_medium"
+                    android:textColor="@color/blackText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
@@ -62,10 +55,9 @@
                 <TextView
                     android:id="@+id/chambre_quartier"
                     android:text="70.000 Fcfa/mois"
-                    android:layout_marginTop="5dp"
-                    android:fontFamily="@font/roboto_thin"
-                    android:textColor="@color/blueSecond"
-                    android:textSize="12sp"
+                    android:fontFamily="@font/brandon_medium"
+                    android:textColor="@color/blackText"
+                    android:textSize="16sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
@@ -75,11 +67,6 @@
 
         </RelativeLayout>
 
-        <View
-            android:background="@drawable/rounded_studio"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
-    </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>

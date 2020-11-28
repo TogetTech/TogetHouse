@@ -16,36 +16,89 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07e5c5a-dc47-4f26-998d-3db6bf56c262" name="Default Changelist" comment="Add fragment_appartement_detail.xml, AppartementDetailFragment etc.. for AppartementAdapter">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/BestAppartementAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_img_detail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_comment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_chambre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/roundede_separe_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/brandon_medium.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/semibold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_other_image.xml" afterDir="false" />
+    <list default="true" id="a07e5c5a-dc47-4f26-998d-3db6bf56c262" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/BestChambreAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/BestMaisonAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/BestTerrainAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/MaisonAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/TerrainAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/IMaisonCallbackListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Callback/ITerrainCallbackListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/MaisonDetailClick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/MaisonItemClick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/TerrainDetailClick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/EventBus/TerrainItemClick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/MaisonModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Model/TerrainModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/maison/MaisonViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/maison/detail/MaisonDetailFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/maison/detail/MaisonDetailViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/terrain/TerrainFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/terrain/TerrainViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/terrain/detail/TerrainDetailFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/terrain/detail/TerrainDetailViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_terrain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/togethouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_maison_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_terrain.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_terrain_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_maison.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_terrain.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_instrumentation_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_instrumentation_2_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/TogetHouse.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/TogetHouse.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/AppartementAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/AppartementAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/appartement/detail/AppartementDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/appartement/detail/AppartementDetailFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/ChambreAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/ChambreAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/StudioAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Adapter/StudioAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Common/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/Common/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/HomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/HomeActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/appartement/detail/AppartementDetailViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/appartement/detail/AppartementDetailViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_launch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_launch.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/chambre/ChambreFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/chambre/ChambreFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/chambre/detail/ChambreDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/chambre/detail/ChambreDetailFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/chambre/detail/ChambreDetailViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/chambre/detail/ChambreDetailViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/home/HomeViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/home/HomeViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/maison/MaisonFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/ui/maison/MaisonFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/caroussel_view.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_appartement_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_appartement_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_appartement.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_appartement.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chambre_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_chambre_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_maison.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_maison.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_addon_display.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_addon_item.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_chambre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_chambre.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_other_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_studio.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_item_studio.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_vhip_with_delete_icon.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_home_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_home_drawer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_scrolling.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[0304009835011062]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -91,16 +144,16 @@
         <option value="valueResourceFile" />
         <option value="Enum" />
         <option value="Kotlin Class" />
-        <option value="Interface" />
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="EXPORT_PRIVATE_KEY" value="false" />
-    <option name="KEY_STORE_PATH" value="$USER_HOME$/Bureau/release/my-release-key.jks" />
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Bureau/release/TogetHouse/my-release-key.jks" />
     <option name="KEY_ALIAS" value="my-alias" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
@@ -126,18 +179,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ApkExportedModule" value="app" />
-    <property name="BundleExportedModule" value="app" />
+    <property name="BundleExportedModule" value="TogetHouse.app" />
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kmerdelices" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="settings.editor.splitter.proportion" value="0.1092118" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -331,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605451697934</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add fragment_appartement_detail.xml, AppartementDetailFragment etc.. for AppartementAdapter">
+      <created>1606430753408</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606430753408</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,7 +426,7 @@
       <screen x="0" y="28" width="1920" height="989" />
     </state>
     <state x="599" y="325" width="712" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598498870691" />
-    <state x="741" y="262" width="374" height="581" key="#com.intellij.ide.util.MemberChooser" timestamp="1606225510283">
+    <state x="741" y="262" width="374" height="581" key="#com.intellij.ide.util.MemberChooser" timestamp="1606559971161">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state x="741" y="258" key="#com.intellij.ide.util.MemberChooser/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601278451160" />
@@ -374,7 +434,7 @@
     <state x="741" y="258" width="374" height="558" key="#com.intellij.ide.util.MemberChooser/0.28.1920.989@0.28.1920.989" timestamp="1600485028808" />
     <state x="741" y="260" width="374" height="573" key="#com.intellij.ide.util.MemberChooser/0.32.1920.978@0.32.1920.978" timestamp="1602018610356" />
     <state x="741" y="262" width="374" height="622" key="#com.intellij.ide.util.MemberChooser/0.32.1920.986/1920.0.1366.768@0.32.1920.986" timestamp="1603931084975" />
-    <state x="741" y="262" width="374" height="558" key="#com.intellij.ide.util.MemberChooser/0.32.1920.986@0.32.1920.986" timestamp="1606225510283" />
+    <state x="741" y="262" width="374" height="558" key="#com.intellij.ide.util.MemberChooser/0.32.1920.986@0.32.1920.986" timestamp="1606559971161" />
     <state x="1268" y="262" width="374" height="581" key="#com.intellij.ide.util.MemberChooser/0.32.3286.986@0.32.3286.986" timestamp="1605214649405" />
     <state x="655" y="289" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606227413575">
       <screen x="0" y="32" width="1920" height="986" />
@@ -394,30 +454,29 @@
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state x="708" y="312" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.32.1920.986@0.32.1920.986" timestamp="1603893050779" />
-    <state x="559" y="303" width="824" height="480" key="AndroidCreateResourceFileDialog" timestamp="1606220862601">
+    <state x="559" y="303" width="824" height="480" key="AndroidCreateResourceFileDialog" timestamp="1606504021390">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state x="483" y="295" width="824" height="480" key="AndroidCreateResourceFileDialog/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598497233699" />
     <state x="509" y="295" key="AndroidCreateResourceFileDialog/0.28.3286.988@0.28.3286.988" timestamp="1600985138855" />
-    <state x="559" y="303" width="824" height="480" key="AndroidCreateResourceFileDialog/0.32.1920.986@0.32.1920.986" timestamp="1606220862601" />
+    <state x="559" y="303" width="824" height="480" key="AndroidCreateResourceFileDialog/0.32.1920.986@0.32.1920.986" timestamp="1606504021390" />
     <state x="509" y="298" key="AndroidCreateResourceFileDialog/0.32.3286.986@0.32.3286.986" timestamp="1603664368211" />
     <state x="765" y="367" width="357" height="303" key="AndroidCreateXmlResourceDialog" timestamp="1604791918628">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state x="765" y="364" width="338" height="315" key="AndroidCreateXmlResourceDialog/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598497040521" />
-    <state x="2589" y="357" width="332" height="327" key="AndroidCreateXmlResourceDialog/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597855433170" />
     <state x="765" y="364" width="332" height="323" key="AndroidCreateXmlResourceDialog/0.28.1920.989@0.28.1920.989" timestamp="1598174900376" />
     <state x="1309" y="364" key="AndroidCreateXmlResourceDialog/0.28.3286.988@0.28.3286.988" timestamp="1600983692137" />
     <state x="765" y="367" width="357" height="303" key="AndroidCreateXmlResourceDialog/0.32.1920.986@0.32.1920.986" timestamp="1604791918628" />
-    <state x="447" y="73" width="1016" height="900" key="CommitChangelistDialog2" timestamp="1605451716364">
+    <state x="447" y="73" width="1016" height="900" key="CommitChangelistDialog2" timestamp="1606430752816">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
-    <state x="447" y="73" width="1016" height="900" key="CommitChangelistDialog2/0.32.1920.986@0.32.1920.986" timestamp="1605451716364" />
+    <state x="447" y="73" width="1016" height="900" key="CommitChangelistDialog2/0.32.1920.986@0.32.1920.986" timestamp="1606430752816" />
     <state x="614" y="281" key="Downloadable.Font.Dialog.Size" timestamp="1604792773778">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state x="614" y="281" key="Downloadable.Font.Dialog.Size/0.32.1920.986@0.32.1920.986" timestamp="1604792773778" />
-    <state x="712" y="298" width="447" height="491" key="FileChooserDialogImpl" timestamp="1606403607338">
+    <state x="712" y="298" width="447" height="491" key="FileChooserDialogImpl" timestamp="1606505319088">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state x="712" y="295" key="FileChooserDialogImpl/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1600812926916" />
@@ -425,7 +484,7 @@
     <state x="2543" y="283" width="424" height="480" key="FileChooserDialogImpl/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1598080332167" />
     <state x="712" y="295" width="424" height="480" key="FileChooserDialogImpl/0.28.1920.989@0.28.1920.989" timestamp="1600602010127" />
     <state x="712" y="296" width="424" height="490" key="FileChooserDialogImpl/0.32.1920.978@0.32.1920.978" timestamp="1602888481995" />
-    <state x="712" y="298" width="447" height="491" key="FileChooserDialogImpl/0.32.1920.986@0.32.1920.986" timestamp="1606403607338" />
+    <state x="712" y="298" width="447" height="491" key="FileChooserDialogImpl/0.32.1920.986@0.32.1920.986" timestamp="1606505319088" />
     <state x="807" y="425" key="Github.ShareDialog" timestamp="1603875777664">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
@@ -434,7 +493,7 @@
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state x="573" y="212" width="764" height="622" key="Github.UntrackedFilesDialog/0.32.1920.986@0.32.1920.986" timestamp="1603875784480" />
-    <state width="1874" height="441" key="GridCell.Tab.0.bottom" timestamp="1605540653711">
+    <state width="1874" height="457" key="GridCell.Tab.0.bottom" timestamp="1606562079951">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state width="1874" height="302" key="GridCell.Tab.0.bottom/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601279392935" />
@@ -442,8 +501,8 @@
     <state width="1874" height="248" key="GridCell.Tab.0.bottom/0.28.1920.989@0.28.1920.989" timestamp="1600474110352" />
     <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.32.1920.978@0.32.1920.978" timestamp="1602007370463" />
     <state width="1874" height="441" key="GridCell.Tab.0.bottom/0.32.1920.986/1920.0.1366.768@0.32.1920.986" timestamp="1603932986710" />
-    <state width="1874" height="441" key="GridCell.Tab.0.bottom/0.32.1920.986@0.32.1920.986" timestamp="1605540653711" />
-    <state width="1874" height="441" key="GridCell.Tab.0.center" timestamp="1605540653709">
+    <state width="1874" height="457" key="GridCell.Tab.0.bottom/0.32.1920.986@0.32.1920.986" timestamp="1606562079951" />
+    <state width="1874" height="457" key="GridCell.Tab.0.center" timestamp="1606562079950">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state width="1874" height="302" key="GridCell.Tab.0.center/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601279392935" />
@@ -451,8 +510,8 @@
     <state width="1874" height="248" key="GridCell.Tab.0.center/0.28.1920.989@0.28.1920.989" timestamp="1600474110352" />
     <state width="1874" height="244" key="GridCell.Tab.0.center/0.32.1920.978@0.32.1920.978" timestamp="1602007370463" />
     <state width="1874" height="441" key="GridCell.Tab.0.center/0.32.1920.986/1920.0.1366.768@0.32.1920.986" timestamp="1603932986710" />
-    <state width="1874" height="441" key="GridCell.Tab.0.center/0.32.1920.986@0.32.1920.986" timestamp="1605540653709" />
-    <state width="1874" height="441" key="GridCell.Tab.0.left" timestamp="1605540653708">
+    <state width="1874" height="457" key="GridCell.Tab.0.center/0.32.1920.986@0.32.1920.986" timestamp="1606562079950" />
+    <state width="1874" height="457" key="GridCell.Tab.0.left" timestamp="1606562079950">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state width="1874" height="302" key="GridCell.Tab.0.left/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601279392935" />
@@ -460,8 +519,8 @@
     <state width="1874" height="248" key="GridCell.Tab.0.left/0.28.1920.989@0.28.1920.989" timestamp="1600474110351" />
     <state width="1874" height="244" key="GridCell.Tab.0.left/0.32.1920.978@0.32.1920.978" timestamp="1602007370463" />
     <state width="1874" height="441" key="GridCell.Tab.0.left/0.32.1920.986/1920.0.1366.768@0.32.1920.986" timestamp="1603932986710" />
-    <state width="1874" height="441" key="GridCell.Tab.0.left/0.32.1920.986@0.32.1920.986" timestamp="1605540653708" />
-    <state width="1874" height="441" key="GridCell.Tab.0.right" timestamp="1605540653710">
+    <state width="1874" height="457" key="GridCell.Tab.0.left/0.32.1920.986@0.32.1920.986" timestamp="1606562079950" />
+    <state width="1874" height="457" key="GridCell.Tab.0.right" timestamp="1606562079951">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state width="1874" height="302" key="GridCell.Tab.0.right/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1601279392935" />
@@ -469,32 +528,35 @@
     <state width="1874" height="248" key="GridCell.Tab.0.right/0.28.1920.989@0.28.1920.989" timestamp="1600474110352" />
     <state width="1874" height="244" key="GridCell.Tab.0.right/0.32.1920.978@0.32.1920.978" timestamp="1602007370463" />
     <state width="1874" height="441" key="GridCell.Tab.0.right/0.32.1920.986/1920.0.1366.768@0.32.1920.986" timestamp="1603932986710" />
-    <state width="1874" height="441" key="GridCell.Tab.0.right/0.32.1920.986@0.32.1920.986" timestamp="1605540653710" />
-    <state x="449" y="161" width="900" height="736" key="SettingsEditor" timestamp="1603930701468">
+    <state width="1874" height="457" key="GridCell.Tab.0.right/0.32.1920.986@0.32.1920.986" timestamp="1606562079951" />
+    <state x="543" y="271" width="824" height="508" key="IDE.errors.dialog" timestamp="1606431569403">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
-    <state x="2313" y="137" key="SettingsEditor/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597860566979" />
+    <state x="543" y="271" width="824" height="508" key="IDE.errors.dialog/0.32.1920.986@0.32.1920.986" timestamp="1606431569403" />
+    <state x="449" y="161" width="900" height="732" key="SettingsEditor" timestamp="1606433431879">
+      <screen x="0" y="32" width="1920" height="986" />
+    </state>
     <state x="449" y="157" key="SettingsEditor/0.28.1920.989@0.28.1920.989" timestamp="1600601741913" />
     <state x="768" y="157" width="1022" height="737" key="SettingsEditor/0.28.3286.988@0.28.3286.988" timestamp="1600988705348" />
     <state x="449" y="161" width="900" height="736" key="SettingsEditor/0.32.1920.986/1920.0.1366.768@0.32.1920.986" timestamp="1603930701468" />
-    <state x="555" y="261" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1605451725668">
+    <state x="449" y="161" width="900" height="732" key="SettingsEditor/0.32.1920.986@0.32.1920.986" timestamp="1606433431879" />
+    <state x="555" y="261" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1606430762207">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
-    <state x="555" y="261" width="800" height="524" key="Vcs.Push.Dialog.v2/0.32.1920.986@0.32.1920.986" timestamp="1605451725668" />
-    <state x="732" y="305" width="446" height="436" key="chooseDestDirectoryDialog" timestamp="1606427624873">
+    <state x="555" y="261" width="800" height="524" key="Vcs.Push.Dialog.v2/0.32.1920.986@0.32.1920.986" timestamp="1606430762207" />
+    <state x="732" y="305" width="446" height="436" key="chooseDestDirectoryDialog" timestamp="1606434646846">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state x="732" y="302" width="446" height="447" key="chooseDestDirectoryDialog/0.28.1920.988@0.28.1920.988" timestamp="1601409479021" />
     <state x="732" y="302" width="446" height="436" key="chooseDestDirectoryDialog/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598495863756" />
     <state x="732" y="303" width="446" height="436" key="chooseDestDirectoryDialog/0.32.1920.978@0.32.1920.978" timestamp="1601987179062" />
-    <state x="732" y="305" width="446" height="436" key="chooseDestDirectoryDialog/0.32.1920.986@0.32.1920.986" timestamp="1606427624872" />
+    <state x="732" y="305" width="446" height="436" key="chooseDestDirectoryDialog/0.32.1920.986@0.32.1920.986" timestamp="1606434646846" />
     <state x="616" y="354" key="com.intellij.ide.util.TipDialog" timestamp="1602979347295">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
     <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.28.1920.988/1920.0.1366.768@0.28.1920.988" timestamp="1600812828308" />
     <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.28.1920.988@0.28.1920.988" timestamp="1601368626594" />
     <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.28.1920.989/1920.0.1680.1050@0.28.1920.989" timestamp="1598823829058" />
-    <state x="2459" y="342" key="com.intellij.ide.util.TipDialog/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1597868723694" />
     <state x="616" y="350" key="com.intellij.ide.util.TipDialog/0.28.1920.989@0.28.1920.989" timestamp="1600601991640" />
     <state x="616" y="351" key="com.intellij.ide.util.TipDialog/0.32.1920.978@0.32.1920.978" timestamp="1602888423279" />
     <state x="616" y="354" key="com.intellij.ide.util.TipDialog/0.32.1920.986@0.32.1920.986" timestamp="1602979347295" />
@@ -507,22 +569,18 @@
     </state>
     <state x="695" y="28" width="1130" height="978" maximized="true" key="dock-window-1/0.28.1920.989/1920.0.1680.1050@1920.0.1680.1050" timestamp="1598084942487" />
     <state x="984" y="28" width="932" height="989" key="dock-window-1/0.28.1920.989@0.28.1920.989" timestamp="1598174901715" />
-    <state x="471" y="108" width="978" height="828" key="find.popup" timestamp="1597826162220">
-      <screen x="0" y="28" width="1920" height="989" />
-    </state>
-    <state x="471" y="108" width="978" height="828" key="find.popup/0.28.1920.989@0.28.1920.989" timestamp="1597826162220" />
-    <state x="576" y="257" key="run.anything.popup" timestamp="1603931012538">
+    <state x="576" y="257" key="run.anything.popup" timestamp="1606516282260">
       <screen x="0" y="32" width="1920" height="986" />
     </state>
-    <state x="576" y="254" key="run.anything.popup/0.28.1920.989@0.28.1920.989" timestamp="1597827985456" />
     <state x="576" y="257" key="run.anything.popup/0.32.1920.986/1920.0.1366.768@0.32.1920.986" timestamp="1603931012538" />
+    <state x="576" y="257" key="run.anything.popup/0.32.1920.986@0.32.1920.986" timestamp="1606516282260" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/cm/togettech/togethouse/HomeActivity.java</url>
-          <line>83</line>
+          <line>87</line>
           <properties class="cm.togettech.togethouse.HomeActivity" method="onSupportNavigateUp">
             <option name="EMULATED" value="true" />
           </properties>

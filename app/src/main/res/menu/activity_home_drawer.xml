@@ -17,15 +17,22 @@
             android:icon="@drawable/ic_menu_studio"
             android:title="Studios" />
 
-        <item
+       <item
             android:id="@+id/nav_appartement"
             android:icon="@drawable/ic_menu_appartement"
             android:title="Appartements" />
 
-        <item
+       <item
             android:id="@+id/nav_maison"
             android:icon="@drawable/ic_menu_maison"
             android:title="Maisons" />
+
+       <item
+            android:id="@+id/nav_terrain"
+            android:icon="@drawable/ic_menu_terrain"
+            android:title="Terrains" />
+
+
     </group>
 
 

@@ -111,7 +111,7 @@ public class AppartementAdapter extends RecyclerView.Adapter<AppartementAdapter.
         public MyViewHolder(@NonNull View itemView){
             super(itemView);
             unbinder = ButterKnife.bind(this, itemView);
-            itemView.setOnClickListener((View.OnClickListener) this);
+            itemView.setOnClickListener(this);
         }
 
         @Override

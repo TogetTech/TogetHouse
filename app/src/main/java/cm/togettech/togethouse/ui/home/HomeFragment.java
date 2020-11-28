@@ -23,7 +23,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cm.togettech.togethouse.Adapter.ChambreAdapter;
+import cm.togettech.togethouse.Adapter.MaisonAdapter;
 import cm.togettech.togethouse.Adapter.StudioAdapter;
+import cm.togettech.togethouse.Adapter.TerrainAdapter;
 import cm.togettech.togethouse.R;
 
 public class HomeFragment extends Fragment {
@@ -41,6 +43,12 @@ public class HomeFragment extends Fragment {
     @BindView(R.id.recycler_chambre)
     RecyclerView recycler_chambre;
 
+    @BindView(R.id.recycler_maison)
+    RecyclerView recycler_maison;
+
+    @BindView(R.id.recycler_terrain)
+    RecyclerView recycler_terrain;
+
 
     LayoutAnimationController layoutAnimationController;
 
@@ -55,7 +63,6 @@ public class HomeFragment extends Fragment {
         init();
 
         homeViewModel.getAppartementList().observe(this, appartementModels -> {
-
             //Create adapter for appartement
             AppartementAdapter adapter = new AppartementAdapter(getContext(), appartementModels);
             recycler_appartement.setAdapter(adapter);
@@ -63,7 +70,6 @@ public class HomeFragment extends Fragment {
         });
 
         homeViewModel.getStudioList().observe(this, studioModels -> {
-
             //Create adapter for studio
             StudioAdapter adapter = new StudioAdapter(getContext(), studioModels);
             recycler_studio.setAdapter(adapter);
@@ -71,11 +77,24 @@ public class HomeFragment extends Fragment {
         });
 
         homeViewModel.getChambreList().observe(this, chambreModels -> {
-
             //Create adapter for chambre
             ChambreAdapter adapter = new ChambreAdapter(getContext(), chambreModels);
             recycler_chambre.setAdapter(adapter);
             recycler_chambre.setLayoutAnimation(layoutAnimationController);
+        });
+
+        homeViewModel.getMaisonList().observe(this, maisonModels -> {
+            //Create adapter for maison
+            MaisonAdapter adapter = new MaisonAdapter(getContext(), maisonModels);
+            recycler_maison.setAdapter(adapter);
+            recycler_maison.setLayoutAnimation(layoutAnimationController);
+        });
+
+        homeViewModel.getTerrainList().observe(this, terrainModels -> {
+            //Create adapter for terrain
+            TerrainAdapter terrainAdapter = new TerrainAdapter(getContext(), terrainModels);
+            recycler_terrain.setAdapter(terrainAdapter);
+            recycler_terrain.setLayoutAnimation(layoutAnimationController);
         });
 
         return root;
@@ -95,6 +114,14 @@ public class HomeFragment extends Fragment {
         //Load recyclerView Chambre
         recycler_chambre.setHasFixedSize(true);
         recycler_chambre.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+
+        //Load recyclerView Maison
+        recycler_maison.setHasFixedSize(true);
+        recycler_maison.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+
+        //Load recyclerView Terrain
+        recycler_terrain.setHasFixedSize(true);
+        recycler_terrain.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
     }
     @Override
     public void onResume(){

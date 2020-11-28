@@ -28,6 +28,10 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 import butterknife.ButterKnife;
+import cm.togettech.togethouse.EventBus.MaisonDetailClick;
+import cm.togettech.togethouse.EventBus.MaisonItemClick;
+import cm.togettech.togethouse.EventBus.TerrainDetailClick;
+import cm.togettech.togethouse.EventBus.TerrainItemClick;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -63,7 +67,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_chambre, R.id.nav_chambre_detail,
-                R.id.nav_studio, R.id.nav_appartement, R.id.nav_appartement_detail, R.id.nav_maison)
+                R.id.nav_studio, R.id.nav_appartement, R.id.nav_appartement_detail,
+                R.id.nav_maison, R.id.nav_maison_detail, R.id.nav_terrain, R.id.nav_terrain_detail)
                 .setDrawerLayout(drawer)
                 .build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -108,6 +113,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_maison:
                 navController.navigate(R.id.nav_maison);
                 break;
+            case R.id.nav_terrain:
+                navController.navigate(R.id.nav_terrain);
+                break;
 
         }
         return true;
@@ -127,8 +135,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         super.onStop();
     }
 
-
-
     @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
     public void onChambreItemSelected(ChambreItemClick event){
         if (event.isSuccess()){
@@ -143,9 +149,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-
-
-
     @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
     public void onAppartementItemClick(AppartementItemClick event){
         if (event.isSuccess()){
@@ -155,14 +158,35 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
     @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
-    public void onAppartementDetailClick(AppartementDetailClick event){
+    public void onMaisonDetailClick(MaisonDetailClick event){
         if (event.isSuccess()){
-            navController.navigate(R.id.nav_appartement_detail);
+            navController.navigate(R.id.nav_maison_detail);
         }
     }
 
 
+    @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
+    public void onMaisonItemClick(MaisonItemClick event){
+        if (event.isSuccess()){
+            navController.navigate(R.id.nav_maison);
+        }
+    }
 
+
+    @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
+    public void onTerrainDetailClick(TerrainDetailClick event){
+        if (event.isSuccess()){
+            navController.navigate(R.id.nav_terrain_detail);
+        }
+    }
+
+
+    @Subscribe(sticky = true, threadMode =  ThreadMode.MAIN)
+    public void onTerrainItemClick(TerrainItemClick event){
+        if (event.isSuccess()){
+            navController.navigate(R.id.nav_terrain);
+        }
+    }
 
     //**********************************************************************************************
 }

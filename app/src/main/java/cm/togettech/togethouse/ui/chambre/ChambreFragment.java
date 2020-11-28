@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -56,6 +57,8 @@ public class ChambreFragment extends Fragment {
             ChambreAdapter adapter = new ChambreAdapter(getContext(), chambreModels);
             recycler_chambre.setAdapter(adapter);
             recycler_chambre.setLayoutAnimation(layoutAnimationController);
+
+
         });
 
         return root;
@@ -64,7 +67,7 @@ public class ChambreFragment extends Fragment {
     private void initViews() {
         layoutAnimationController = AnimationUtils.loadLayoutAnimation(getContext(), R.anim.layout_item_from_left);
         recycler_chambre.setHasFixedSize(true);
-        recycler_chambre.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
+        recycler_chambre.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
 
 
